@@ -32,12 +32,6 @@
               </nav>
               <nav class="main">
                 <ul>
-               <!--   <li class="search">
-                    <a class="fa-search" href="#search">Search</a>
-                    <form id="search" method="get" action="#">
-                      <input type="text" name="query" placeholder="Search" />
-                    </form>
-                  </li> -->
                   <li class="menu">
                     <a class="fa-bars" href="#menu">Menu</a>
                   </li>
@@ -47,13 +41,6 @@
 
           <!-- Menu -->
             <section id="menu">
-
-              <!-- Search -->
-            <!--    <section>
-                  <form class="search" method="get" action="#">
-                    <input type="text" name="query" placeholder="Search" />
-                  </form>
-                </section> -->
 
               <!-- Links -->
                 <section>
@@ -80,6 +67,7 @@
                       <a href="team.html">
                         <h3>CEERS Team Members</h3>
                         <p>18 CoIs from 12 Institutions</p>
+                        <p>100+ Collaborators</p>
                       </a>
                     </li>
                   </ul>
@@ -95,37 +83,33 @@
             <!-- End Menu -->
             </section>
 
-          <!-- Main -->
+            <!-- Main -->
             <div id="main">
 
-              <!-- Post -->
+              <!-- Post Heading -->
                 <article class="post">
-                  <header>
-                    <div class="title">
-                      <h2><a href="#">CEERS Observing Modes</a></h2>
-                        <p>CEERS will obtain imaging and spectroscopy of the 
-                        EGS field with six parallel <i>JWST</i> instrument 
-                        modes:</p>
-                    <p class="tab">
-                      <a href=#nircam>NIRCam</a></p>
-                    <p class="tab">
-                      <a href=#nirspec>NIRSpec</a></p>
-                    <p class="tab">
-                      <a href=#miri>MIRI</a></p>
-                    </div>
-                  </header>
+                   <h2>CEERS Observing Modes</h2>
+                   <p style="margin-bottom:0.4em;">CEERS will obtain imaging and spectroscopy of the 
+                      EGS field with six parallel JWST instrument modes:</p>
+                   <p class="tab"><a href=#nircam>NIRCam</a></p>
+                   <p class="tab"><a href=#nirspec>NIRSpec</a></p>
+                   <p class="tab"><a href=#miri>MIRI</a></p>
+                  <hr> 
+                  <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx">Download CEERS APT File</a><br>
+                     <a href="https://www.stsci.edu/jwst/phase2-public/1345.pdf">Download CEERS Public PDF</a></p>
+                </article>
                 
+                <article class="post">
                     <section id="nircam">
                       <h3>NIRCam</h3>
-                        <img class="image right" src="images/obs.png" alt="" title="Planned EGS Observations">
-                      <!-- Modal observing plan -->
-                    <!--    <img class="image right" id="modalobs" src="images/obs.png" alt="" title="Planned EGS Observations">
-                        <div id="myModal" class="modal">
+                        <!-- Modal observing plan -->
+                        <img class="image right modalimg" id="modalobs" src="images/obs.png" alt="Survey layout and planned EGS observations" title="Planned EGS Observations">
+                          <div id="myModal" class="modal">
                           <div class="container">
-                            <div class="close">&times;</div>
-                          <img class="modal-content" src="images/obs.png" id="modalstratmap">
+                          <span class="close">&times;</span>
+                          <img class="modal-content" src="images/obs.png" id="img01">
                           </div>  
-                        </div> -->
+                        </div> 
                         <p>The NIRCam observing strategy is set by the primary science goal of detecting a large sample of z~9-13 galaxies. CEERS is based on 10 NIRCam pointings covering ~100 square arcmin of the Extended Groth Strip (EGS) <i>HST</i> legacy field. CEERS will obtain:</p>
                         <ul style="margin-top:-1em;">
                           <li>F115W + F150W + F100W will probe the 
@@ -193,9 +177,8 @@
               <section id="footer">
                 <ul class="icons">
                   <li><a href="https://twitter.com/ceers_jwst" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">Instagram</span></a></li>
-                  <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
+     <!--             <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>  -->
                 </ul>
                 <p class="copyright" style="color:#f2a004; margin-left: 1.5em;">&copy; CEERS. Design: <a href="http://html5up.net">HTML5 UP</a>. </p>
               </section>
