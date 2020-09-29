@@ -3169,7 +3169,7 @@ input, select, textarea {
         position: relative;
         background-color: rgba(0,0,0,0);
         margin: auto;
-        max-width: 80%;
+        max-width: 90%;
         max-height: 80%;
     }
 
@@ -3245,8 +3245,8 @@ input, select, textarea {
 
     .close:hover,
     .close:focus {
-        color: #000;
-        border: solid 2px #000;
+        color: #f2a004;
+        border: solid 2px #f2a004;
         text-decoration: none;
         cursor: pointer;
     }
