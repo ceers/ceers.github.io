@@ -96,20 +96,20 @@
                    <p class="tab"><a href=#miri>MIRI</a></p>
 
                  <hr> 
-                   <p>The CEERS observations are schedulable in June and December (with a 180&deg; flip). We show here the survey layout for both observability windows. Note that the APT file linked below corresponds to the December window.</p>
+                   <p>The CEERS observations are schedulable in June and December (with a 180&deg; flip). We show here the survey layout for both observability windows. Note that the APT file linked below corresponds to the December window, though with an Oct 31, 2021, launch date CEERS would likely be scheduled in June 2022. </p>
                     <!-- Modal observing plan -->
                     <figure>
-                      <img class="image modalimg" id="modalobs" src="images/EGS.png" alt="" title="Survey layout and planned EGS observations" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
+                      <img class="image modalimg" id="modalobs" src="images/EGS2.png" alt="" title="Survey layout and planned EGS observations" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
                       <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;">(Click image to enlarge.)</figcaption>
                       <div id="myModal" class="modal">
                         <div class="container">
                           <div class="close">&times;</div>
-                          <img class="modal-content" src="images/EGS.png" id="img01">
+                          <img class="modal-content" src="images/EGS2.png" id="img01">
                         </div>
                      </div>
                     </figure>
 
-                    <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx">Download CEERS APT File</a><br>
+                    <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx">Download CEERS APT File</a> (for December observations)<br>
                        <a href="https://www.stsci.edu/jwst/phase2-public/1345.pdf" target="_blank">Download CEERS Public PDF</a>
                     </p>
                 </article>
@@ -126,8 +126,29 @@
                           </div>  
                         </div> -->
                         <p>The NIRCam observing strategy is set by the primary science goal of detecting a large sample of z~9-13 galaxies. CEERS is based on 10 NIRCam pointings covering ~100 square arcmin of the EGS field. CEERS will obtain:</p>
+                     <ul style="margin-top:-2em;">
+                        <li>NIRCam imaging in 10 pointings, pairing the SW and LW filters. The following represent the planned 5&sigma; point source depths per filter.</li>
+                    <table style="margin-top:1em; margin-bottom:0;">
+                      <thead style="font-size:1.1em;">
+                        <th>SW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
+                        <th>LW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
+                      </thead>
+                      <tbody>
+                        <tr><td>F115W</td><td>29.15</td>
+                            <td>F277W</td><td>29.15</td></tr>
+                        <tr><td>F150W</td><td>28.9</td>
+                            <td>F356W</td><td>28.95</td></tr>
+                        <tr><td>F200W</td><td>28.97</td>
+                            <td>F444W</td><td>28.6</td></tr>
+                        <tr><td></td><td></td>
+                            <td>F410M*</td><td>28.4</td></tr>
+                      </tbody>
+                    </table>
+                      <p>* F410M will be obtained for the 6 NIRCam pointings that do not use the Slitless Spectroscopy mode.</p>
+                      </ul>
+
                         <ul style="margin-top:-1em;">
-                          <li>F115W + F150W + F100W will probe the 
+                          <li>F115W + F150W + F200W will probe the 
                            Ly&#945; break and will be paired with the LWF 
                            filters F277W, F356W and F444W at no cost.</li>
                           <li>Additional F115W imaging will increase the 
@@ -143,7 +164,9 @@
                            6.7 &lt; z &lt; 7.6</li>
                         </ul>
                     </section>
+                  </article>
                 
+                  <article class="post">
                     <section id="nirspec">
                       <h3>NIRSpec</h3>
                         <p>The NIRSpec MSA observations address diverse goals: measuring redshifts of high-priority distant galaxies, characterizing ISM and AGN evolution, and testing <i>JWST</i> observing strategies for Cycle 2. CEERS will observe 6 pointings with R~1000 and 4 pointings with R~100. The NIRSpec strategy includes:</p>
@@ -155,7 +178,9 @@
                           <li>Testing the impact of object centering through small dithers.</li>
                         </ul>
                     </section>
+                  </article>
 
+                  <article class="post">
                     <section id="miri">
                       <h3>MIRI</h3>
                         <p>The MIRI observations address two goals:</p>
@@ -172,6 +197,22 @@
                             providing constraints on SFR &amp; AGN diagnostics 
                             at z=1-3.</li>
                           </ul>
+                    <table style="margin-top:1em; margin-bottom:0; text-align:center;">
+                      <thead style="font-size:1.1em; text-align:center;">
+                        <th style="text-align:center;">Filter</th><th style="text-align:center;">Depth<br>(5&sigma; pt. source)</th>
+                        <th style=text-align:center;">Pointing*</th>
+                      </thead>
+                      <tbody>
+                        <tr><td>F560W</td><td>26.2</td><td>8,10 &nbsp; (1,3)</td></tr>
+                        <tr><td>F770W</td><td>26.0 / 26.2 / 25.5</td><td>8 / 10 / 9 &nbsp; (1 / 3 / 4)</td></tr>
+                        <tr><td>F1000W</td><td>24.8</td><td>7,9 &nbsp; (2,4)</td></tr>
+                        <tr><td>F1280W</td><td>24.3</td><td>7,9 &nbsp; (2,4)</td></tr>
+                        <tr><td>F1500W</td><td>23.8</td><td>7,9 &nbsp; (2,4)</td></tr>
+                        <tr><td>F1800W</td><td>22.9</td><td>7,9 &nbsp; (2,4)</td></tr>
+                        <tr><td>F2100W</td><td>21.6 / 21.8</td><td>7 / 9 &nbsp; (2 / 4)</td></tr>
+                      </tbody>
+                    </table>
+                      <p>* Pointing numbers refer to the June configuration. December pointing IDs are in parentheses.</p>
                     </section>
                   </article>
 
