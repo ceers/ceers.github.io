@@ -2002,6 +2002,17 @@ input, select, textarea {
                 color: rgba(160, 160, 160, 0.3) !important;
             }
 
+    /* adding homepage ID */
+    #homepage.button {
+        box-shadow:inset 0 0 0 1px;
+        color:#fff !important;
+        font-size:0.8em;
+    }
+    #homepage.button:hover {
+        box-shadow: inset 0 0 0 1px #f2a004;
+        color: #f2a004; !important;
+    }
+        
 /* Form */
 
     form {
