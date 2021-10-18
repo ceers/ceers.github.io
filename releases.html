@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Data Releases</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/mirror3.ico">
+  </head>
+  <body class="single is-preload">
+
+      <!-- Wrapper -->
+        <div id="wrapper">
+
+          <!-- Header -->
+            <header id="header">
+              <h1><a href="index.html" style="color: #f2a004;">CEERS</a></h1>
+              <nav class="links">
+                <ul>
+                  <li><a href="overview.html">Overview</a></li>
+                  <li><a href="releases.html">Data Releases</a></li>
+                  <li><a href="goals.html">Project Goals</a></li>
+                  <li><a href="obs.html">Obs Modes</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="updates.html">Community Engagement</a></li>
+                </ul>
+              </nav>
+              <nav class="main">
+                <ul>
+                  <li class="menu">
+                    <a class="fa-bars" href="#menu">Menu</a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+
+          <!-- Menu -->
+            <section id="menu">
+
+              <!-- Links -->
+                <section>
+                  <ul class="links">
+                    <li>
+                      <a href="overview.html">
+                        <h3>CEERS Overview</h3>
+                        <p>JWST ERS Project</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="releases.html">
+                        <h3>Data Releases</h3>
+                        <p>Simulated JWST Observations</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="goals.html">
+                        <h3>Project Goals</h3>
+                        <p>High redshift Science</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="obs.html">
+                        <h3>Planned Observing Modes</h3>
+                        <p>NIRCam, MIRI, NIRSpec</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="team.html">
+                        <h3>CEERS Team Members</h3>
+                        <p>18 CoIs from 12 Institutions</p>
+                        <p>100+ Collaborators</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="updates.html">
+                        <h3>Community Engagement</h3>
+                        <p>Team Activities related to Cy1 preparation</p>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
+              <!-- Actions -->
+                <section>
+                  <ul class="actions stacked">
+                    <li><a href="https://wikis.utexas.edu/display/ceers/" class="button large fit">Team Login</a></li>
+                  </ul>
+                </section>
+
+            <!-- End Menu -->
+            </section>
+
+            <!-- Main -->
+            <div id="main">
+
+            <!-- Post Heading -->
+                <article class="post">
+                  <h2>CEERS Data Releases</h2>
+                  <p class="tab"><a href="#v1sims">Simulated JWST Observations - v1</a></p> 
+                </article>
+
+              <!-- Simulated Observations, v0.5 -->
+                <article class="post" id=v1sims>
+                  <section>
+                    <h3>Simulated JWST Observations - v1</h3>
+                      <p>Released: XX October, 2021</p>
+
+                      <!-- Modal June config -->
+                      <figure>
+                        <img class="image modalimg" id="modalobs" src="images/CEERSmap.png" alt="" title="Observing configuration for June 2022" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
+                      <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;">(Click image to enlarge.)</figcaption>
+                      <div id="myModal" class="modal">
+                        <div class="container">
+                          <div class="close">&times;</div>
+                          <img class="modal-content" src="images/CEERSmap.png" id="img01">
+                        </div>
+                     </div>
+                    </figure>
+                      <p></p>
+
+                      <p>CEERS has 10 NIRCam pointings, shown in blue in the figure above with each module labeled with the pointing number. Pointings 1-6 are taken in parallel to prime NIRSpec MSA observations (shown in green), while pointings 7-10 are taken in parallel to prime MIRI imaging observations (shown in red). We also observe pointings 5-8 with the NIRCam WFSS (outlined in cyan) with MIRI imaging in parallel. While the CEERS observing configuration will not be finalized until after launch and Cy1 scheduling, we adopt the June 2022 configuration (above) for our simulations.</p>
+                      <p>In this v1 data release, we provide simulated raw CEERS data for one pointing of NIRCam imaging, six pointings of MIRI imaging, and XX poingtings of NIRCam wide field slitless spectroscopy (WFSS). We provide Jupyter notebooks showing how to reduce the raw data through the JWST Calibration Pipeline, as well as the mock catalog of JWST photometry and galaxy properties that is used as input for the simulations.</p>
+                      <p>Visit the links below for:</p>
+                        <ul style="margin-top:-2em;">
+                          <li> NIRCam imaging simulations of CEERS pointing 5, created with MIRAGE</li>
+                          <li> MIRI simulations of CEERS pointings 5-10, created with MIRISIM</li>
+                          <li> NIRCam WFSS simulalations of CEERS pointing XXX, created with MIRAGE</li>
+                          <li> Input mock catalog, created from the Santa Cruz Semi-Analytic Model (SAM)</li>
+                        </ul>
+                  </section>
+                </article>
+
+
+            <!-- End Main -->
+            </div>
+
+            <!-- Footer -->
+              <section id="footer">
+                <ul class="icons">
+                  <li><a href="https://twitter.com/ceers_jwst" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
+       <!--           <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <p class="copyright" style="color:#f2a004; margin-left: 1.5em;">&copy; CEERS. Design: <a href="http://html5up.net">HTML5 UP</a>. </p>
+              </section>
+
+        <!-- End Wrapper -->
+        </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/modals"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
