@@ -104,8 +104,8 @@
                 <article class="post">
                   <h2>CEERS Simulated Data Release v1</h2>
                   <p class="tab"><a href="#nircam-imaging">NIRCam Imaging</a></p> 
+                  <p class="tab"><a href="#miri-imaging">MIRI Imaging</a></p> 
                   <p class="tab">Coming soon: <a href="#nircam-wfss">NIRCam Wide Field Slitless Spectroscopy</a></p> 
-                  <p class="tab">Coming soon: <a href="#miri-imaging">MIRI Imaging</a></p> 
                 </article>
 
               <!-- SDR1 NIRCam -->
@@ -211,6 +211,195 @@
                       <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/NIRCam/imaging/part2.tar.gz">Download part2.tar.gz</a> (~8.3 GB). Note: untars to ~13 GB and takes up <b>~95 GB</b> after performing all steps. </p>
 
                       <p>Please consult the README files packaged with each tarball before performing any of the reduction steps.</p>
+
+                  </section>
+                </article>
+
+
+                <!-- SDR1 MIRI -->
+                <article class="post" id=miri-imaging>
+                  <section>
+                    <h3>Simulated MIRI Imaging and Reduction for CEERS Pointings 5-10</h3>
+                      <p>We have simulated MIRI images for all six CEERS pointings (CEERS 5-10) using MIRISIM version 2.4.0, with input sources taken from a mock catalog created using the Santa Cruz semi-analytic model for galaxy evolution. Pointings 7, 8, 9 and 10 are obtained as the primary observations (with NIRCam imaging in parallel). Pointings 5 and 6 are taken in parallel with NIRCam WFSS as primary. Pointings 7 and 8 are also observed in parallel with NIRCam WFSS, adding additional filter coverage and/or depth to the primary observations in these pointings.</p>
+
+                      <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/readme.txt" target="_blank">README</a> describing the release.</p>
+                      <p style="margin-top:-1em;">Alternatively, see below to access the fully reduced <a href="#miri-mosaics">mosaics in each filter</a>. We also provide the raw images and <a href="#miri-reduction">step-by-step instructions</a> for reducing the raw images.</p>
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: MIRI</li>
+                          <li>Mode: Imaging</li>
+                          <li>Source of Simulations: MIRISIM v2.4.0</li>
+                          <li>Calibration Pipeline Used: jwst v1.2.3</li>
+                          <li>APT: CEERS ERS 1345</li>
+                          <li>Target: CEERS Pointings 7-10 (as primary), 5-8 (in parallel)</li>
+                          <li>Filters: F560W, F770W, F1000W, F1280W, F1500W, F1800W, F2100W</li>
+                          <li>Readout: SLOWR1 (F560W and F770W), FASTR1 (all other filters)</li>
+                          <li>Observation specification: Groups and integrations vary by filter and pointing</li>
+                            <!--
+                            <ul>
+                              <li>CEERS5b - F1000W, F1280W, F1500W, F1800W: (112,1)</li>
+                              <li>CEERS6b - F560W, F770W: (13,1)</li>
+                              <li>CEERS7 - F1000W, F1280W, F1500W: (100 groups, 2 integrations); F1800W: (40,5); F2100W: (36,10)</li>
+                              <li>CEERS7b - F770W: (13,1); F2100W: (112,1)</li>
+                              <li>CEERS8 - F560W, F770W: (41,1)</li>
+                              <li>CEERS8b - F770W: (13,1)</li>
+                              <li>CEERS9 - F770WL (21,1); F1000W, F1280W, F1500W: (100,2); F1800W: (40,5); F2100W (20,10)</li>
+                              <li>CEERS10 - F560W, F770W: (41,1)</li>
+                            </ul> -->
+                          <li>Dithers: As primary - 3 point custom dithers for coordinated MIRI+NIRCam observations. As parallel - Observations match the NIRCam WFSS observation sequence (4 grism exposures, 1 direct image, and 2 out-of-field images)</li>
+                        </ul>
+
+                      <!--  Mosaics  -->
+                      <h3 id=miri-mosaics>Mosaics</h3>
+                      <ul>
+                        <li>Fully reduced mosaics and weight maps for all MIRI pointings and in all filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/" target="_blank">here (sorted by CEERS pointing ID)</a> or in the table below.</li>
+                        <li>The mosaics are on the native pixel scale of 0.11"/pix.</li>
+                        <li>Note that the images are NOT pixel-aligned. Pixel-aligned images across all filters will be part of our next data release. </li>
+                        <li>Fields marked 'b' are taken in parallel with the primary NIRCam WFSS observations. Pointings 7b and 8b provide additional filter coverage and/or depth to the primary observations in pointings 7 and 8, respectively.</li>
+                      </ul>
+
+                      <div class="table-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>POINTING</th>
+                              <th style='text-align:center'>F560W</th>
+                              <th style='text-align:center'>F770W</th>
+                              <th style='text-align:center'>F1000W</th>
+                              <th style='text-align:center'>F1280W</th>
+                              <th style='text-align:center'>F1500W</th>
+                              <th style='text-align:center'>F1800W</th>
+                              <th style='text-align:center'>F2100W</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>CEERS 5b</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1000W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1000W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1280W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1280W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1500W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1500W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1800W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS5b/F1800W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 6b</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS6b/F560W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS6b/F560W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS6b/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS6b/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 7</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1000W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1000W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1280W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1280W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1500W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1500W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1800W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F1800W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F2100W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7/F2100W/final_weight.fits">Weight Map</a></td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 7b</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7b/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7b/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7b/F2100W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS7b/F2100W/final_weight.fits">Weight Map</a></td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 8</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8/F560W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8/F560W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 8b</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8b/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS8b/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 9</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1000W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1000W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1280W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1280W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1500W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1500W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1800W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F1800W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F2100W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS9/F2100W/final_weight.fits">Weight Map</a></td>
+                            </tr>
+                            <tr>
+                              <td>CEERS 10</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS10/F560W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS10/F560W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS10/F770W/final_image.fits">Science Image</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/CEERS10/F770W/final_weight.fits">Weight Map</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                           
+                            
+
+                      <!-- Data Reduction -->
+                      <h3 id="miri-reduction">Data reduction</h3>
+                      <p>In total there are 113 raw simulated MIRI images:</p>
+                        <ul style="margin-top:-2em;">
+                          <li>14 for pointing CEERS5b (4 filters)</li> 
+                          <li>14 for pointing CEERS6b (2 filters)</li>
+                          <li>15 for pointing CEERS7 (5 filters)</li>
+                          <li>14 for pointing CEERS7b (2 filters)</li>
+                          <li>9 for pointing CEERS8 (2 filters)</li>
+                          <li>14 for pointing CEERS8b (1 filter)</li>
+                          <li>21 for pointing CEERS9 (6 filters)</li>
+                          <li>12 for pointing CEERS10 (2 filters)</li>
+                        </ul>
+
+                      <p style="margin-top:-1em;">Reducing all six MIRI pointings requires a considerable amount of disk space. We therefore provide instructions on how to reduce the simulated data in two parts:</p>
+                      <p style="margin-top:-1.5em;"><b>Part 1 (recommended starting place):</b></p>
+                      <p class="tab" style="margin-top:-2em;">Part 1 includes all input files necessary to reduce MIRI imaging in F770W and F2100W for CEERS pointing 7b, including a Jupyter notebook (pipeline.ipynb) that demonstrates running all of the Calibration Pipeline steps as well as custom processing steps we've developed for the simulated data.</p>
+                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part1.tar.gz">Download part1.tar.gz</a> (1.2 GB). Note: untars to 7.4 GB and takes up <b>~XX GB</b> including all calibration pipeline outputs, i.e., after running all steps in the notebook.</p>
+
+                      <p><b>Part 2:</b></p>
+                      <p class="tab" style="margin-top:-2em;">In order to reduce the raw images for all six MIRI pointings, please follow these steps: </p>
+                      <p class="tab2"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part2.tar.gz">Download part2.tar.gz</a> (~XX GB), which contains the Jupyter notebook and all supporting files required to complete the reduction.</p>
+                      <p class="tab2">Download the raw data for each field you wish to reduce:</p>
+                        <ul class="tab2">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers5b.tar.gz">ceers5b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers6b.tar.gz">ceers6b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7.tar.gz">ceers7.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7b.tar.gz">ceers7b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8.tar.gz">ceers8.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8b.tar.gz">ceers8b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers9.tar.gz">ceers9.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers10.tar.gz">ceers10.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                        </ul>
+                      <p class="tab2">Untar each directory with the following command: <code>tar xvzf [tarfile]</code>, where <code>[tarfile]</code> is the name of each tarball.</p>
+                      <p class="tab2">Run the reduction following the steps in the Jupyter notebook pipeline.ipynb.</p>
+                      <p class="tab">Note that the full reduction takes up <b>~XX GB</b>, i.e., after running all steps in the notebook on all pointings.</p>
+    
+                    <!--
+                      <p style="margin-top:-1em;">We provide a tarball containing all simulated raw MIRI images, a Jupyter notebook (pipeline.ipynb) that demonstrates running all of the Calibration Pipeline steps on all raw images (as well as custom processing steps we've developed for the simulated data), and all supporting files required to complete the reduction:</p>
+                      <p class="tab" style="margin-top:-1.5em;"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/reduction.tar.gz">Download reduction.tar.gz</a> (XX MB). Note: untars to ~65 GB and takes up <b>~65 GB</b> including all calibration pipeline outputs, i.e., after running all steps in the notebook.</p> -->
 
                   </section>
                 </article>
