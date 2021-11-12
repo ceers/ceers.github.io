@@ -105,7 +105,7 @@
                   <h2>CEERS Simulated Data Release v1</h2>
                   <p class="tab"><a href="#nircam-imaging">NIRCam Imaging</a></p> 
                   <p class="tab"><a href="#miri-imaging">MIRI Imaging</a></p> 
-                  <p class="tab">Coming soon: <a href="#nircam-wfss">NIRCam Wide Field Slitless Spectroscopy</a></p> 
+                  <p class="tab">Coming soon: NIRCam Wide Field Slitless Spectroscopy</p> 
                 </article>
 
               <!-- SDR1 NIRCam -->
@@ -255,7 +255,7 @@
                       <h3 id=miri-mosaics>Mosaics</h3>
                       <ul>
                         <li>Fully reduced mosaics and weight maps for all MIRI pointings and in all filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/mosaics/" target="_blank">here (sorted by CEERS pointing ID)</a> or in the table below.</li>
-                        <li>The mosaics are on the native pixel scale of 0.11"/pix.</li>
+                        <li>The mosaics are on the native pixel scale of 0.11"/pix and in units of MJy/sr.</li>
                         <li>Note that the images are NOT pixel-aligned. Pixel-aligned images across all filters will be part of our next data release. </li>
                         <li>Fields marked 'b' are taken in parallel with the primary NIRCam WFSS observations. Pointings 7b and 8b provide additional filter coverage and/or depth to the primary observations in pointings 7 and 8, respectively.</li>
                       </ul>
@@ -377,29 +377,25 @@
                       <p style="margin-top:-1em;">Reducing all six MIRI pointings requires a considerable amount of disk space. We therefore provide instructions on how to reduce the simulated data in two parts:</p>
                       <p style="margin-top:-1.5em;"><b>Part 1 (recommended starting place):</b></p>
                       <p class="tab" style="margin-top:-2em;">Part 1 includes all input files necessary to reduce MIRI imaging in F770W and F2100W for CEERS pointing 7b, including a Jupyter notebook (pipeline.ipynb) that demonstrates running all of the Calibration Pipeline steps as well as custom processing steps we've developed for the simulated data.</p>
-                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part1.tar.gz">Download part1.tar.gz</a> (1.2 GB). Note: untars to 7.4 GB and takes up <b>~XX GB</b> including all calibration pipeline outputs, i.e., after running all steps in the notebook.</p>
+                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part1.tar.gz">Download part1.tar.gz</a> (1.5 GB). Note: untars to 5.4 GB and takes up <b>~10.5 GB</b> including all calibration pipeline outputs and downloaded reference files, i.e., after running all steps in the notebook.</p>
 
                       <p><b>Part 2:</b></p>
                       <p class="tab" style="margin-top:-2em;">In order to reduce the raw images for all six MIRI pointings, please follow these steps: </p>
-                      <p class="tab2"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part2.tar.gz">Download part2.tar.gz</a> (~XX GB), which contains the Jupyter notebook and all supporting files required to complete the reduction.</p>
+                      <p class="tab2"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/part2.tar.gz">Download part2.tar.gz</a> (~2 MB), which contains the Jupyter notebook and all supporting files required to complete the reduction. (You can skip this step if you downloaded part1.tar.gz, as the notebook and required files are the same.)</p>
                       <p class="tab2">Download the raw data for each field you wish to reduce:</p>
                         <ul class="tab2">
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers5b.tar.gz">ceers5b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers6b.tar.gz">ceers6b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7.tar.gz">ceers7.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7b.tar.gz">ceers7b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8.tar.gz">ceers8.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8b.tar.gz">ceers8b.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers9.tar.gz">ceers9.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers10.tar.gz">ceers10.tar.gz</a> (~XX GB, untars to ~XX GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers5b.tar.gz">ceers5b.tar.gz</a> (~2.3 GB, untars to ~7.8 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers6b.tar.gz">ceers6b.tar.gz</a> (~200 MB, untars to ~1 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7.tar.gz">ceers7.tar.gz</a> (~5.2 GB, untars to ~18 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers7b.tar.gz">ceers7b.tar.gz</a> (~1.5 GB, untars to ~5.4 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8.tar.gz">ceers8.tar.gz</a> (~500 MB, untars to ~1.9 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers8b.tar.gz">ceers8b.tar.gz</a> (~200 MB, untars to ~1 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers9.tar.gz">ceers9.tar.gz</a> (~6.2 GB, untars to ~21 GB)</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/ceers10.tar.gz">ceers10.tar.gz</a> (~700 MB, untars to ~2.5 GB)</li>
                         </ul>
                       <p class="tab2">Untar each directory with the following command: <code>tar xvzf [tarfile]</code>, where <code>[tarfile]</code> is the name of each tarball.</p>
                       <p class="tab2">Run the reduction following the steps in the Jupyter notebook pipeline.ipynb.</p>
-                      <p class="tab">Note that the full reduction takes up <b>~XX GB</b>, i.e., after running all steps in the notebook on all pointings.</p>
-    
-                    <!--
-                      <p style="margin-top:-1em;">We provide a tarball containing all simulated raw MIRI images, a Jupyter notebook (pipeline.ipynb) that demonstrates running all of the Calibration Pipeline steps on all raw images (as well as custom processing steps we've developed for the simulated data), and all supporting files required to complete the reduction:</p>
-                      <p class="tab" style="margin-top:-1.5em;"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR1/MIRI/reduction.tar.gz">Download reduction.tar.gz</a> (XX MB). Note: untars to ~65 GB and takes up <b>~65 GB</b> including all calibration pipeline outputs, i.e., after running all steps in the notebook.</p> -->
+                      <p class="tab">Note that the full reduction takes up <b>~65 GB</b>, i.e., after running all steps in the notebook on all pointings.</p>
 
                   </section>
                 </article>
