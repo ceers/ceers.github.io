@@ -1,3 +1,5 @@
 *.swp
 images/maps/DecemberMaps
 images/maps/JuneMaps
+
+.DS_Store
