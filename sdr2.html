@@ -115,7 +115,7 @@
                       <p>We have simulated NIRSpec MSA data for CEERS pointing 3 using the NIRSpec Instrument Performance Simulator (IPS; <a href="https://ui.adsabs.harvard.edu/abs/2010SPIE.7738E..12P/abstract" target="_blank">Piquéras et al. 2010)</a>, with input sources taken from the CANDELS EGS photometric catalog (<a href="https://ui.adsabs.harvard.edu/abs/2017ApJS..229...32S/abstract" target="_blank">Stefanon et al. 2017</a>). The input spectra are simulated as continuum SED models with emission lines using the MAPPINGS library (<a href="https://ui.adsabs.harvard.edu/abs/2008ApJS..178...20A/abstract" target="_blank">Allen et al. 2008</a>), with simulation scenes created from the CEERS MSA configurations. The IPS turns these scenes into simulated count-rate maps, which are the input for Stage 2 of the JWST Calibration Pipeline.</p>
 
                       <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/README.txt" target="_blank">README</a> describing the release.</p>
-                      <p style="margin-top:-1em;">Alternatively, see below to access the fully reduced <a href="#nirspec-spec3">2D spectra and flux calibrated 1D spectra</a>. We also provide the count-rate maps dnd <a href="#nirspec-reduction">step-by-step instructions</a> for reducing them through Stages 2 and 3 of the pipeline.</p>
+                      <p style="margin-top:-1em;">Alternatively, see below to access the fully reduced <a href="#nirspec-spec3">2D spectra and flux calibrated 1D spectra</a>. We also provide the count-rate maps and <a href="#nirspec-reduction">step-by-step instructions</a> for reducing them through Stages 2 and 3 of the pipeline.</p>
 
                       <!-- Summary -->
                       <h3>Summary</h3>
@@ -135,14 +135,13 @@
                       <!--  Mosaics  -->  
                       <h3 id=nirspec-spec3>Calibrated 1D and 2D spectra</h3>
                       <ul>
-                        <li>Fully reduced 2D and 1D spectra in all 4 grating/filter pairs are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP/" target="_blank">here</a> or in the table below.</li>
-                        <li>Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP" target="_blank">README</a> for information on the calibration and file structures.</li>
-                        <li>For each grating/filter in the table below we provide four zipped directories of output spectra:
+                        <li>Fully reduced 2D and 1D spectra in all 4 grating/filter pairs are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra" target="_blank">here</a> or in the table below.</li>
+                        <li>Please see the <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/README.txt" target="_blank">README</a> for information on the calibration and file structures.</li>
+                        <li>For each grating/filter in the table below we provide three zipped directories of output spectra:
                           <ul>
-                            <li>Calibrated 2D spectra (*_cal.fits) for each source, combining all available observations of each target</li>  
                             <li>Distortion-corrected calibrated 2D spectra (*_s2d.fits) </li>
-                            <li>Calibrated 1D spectra (<code>*_x1d.fits</code>), which are extracted from the *_s2d.fits files</li>
-                            <li>Pseudo-flux calibrated 1D spectra (*_fluxcal_1D_spec.dat), applying our custom flux calibration procedure</li>
+                            <li>Calibrated 1D spectra (*_x1d.fits), which are extracted from the 2D spectra *_s2d.fits files</li>
+                            <li>Flux calibrated 1D spectra (*_fluxcal_1D_spec.dat), applying our custom flux calibration procedure</li>
                           </ul>
                       </ul>
 
@@ -158,23 +157,23 @@
                           <tbody>
                             <tr>
                               <td>G140M/F100LP</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Calibrated 2D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Distortion-corrected 2D spectra</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Flux-calibrated 1D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F100LP-G140M/2D_spec.zip">Distortion-corrected 2D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F100LP-G140M/1D_spec.zip">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F100LP-G140M/fluxcal_1D_spec.zip">Flux-calibrated 1D spectra</a></td>
                             </tr>
                             <tr>
                               <td>G235M/F170LP</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Calibrated 2D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Distortion-corrected 2D spectra</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Flux-calibrated 1D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F170LP-G235M/2D_spec.zip">Distortion-corrected 2D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F170LP-G235M/1D_spec.zip">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F170LP-G235M/fluxcal_1D_spec.zip">Flux-calibrated 1D spectra</a></td>
                             </tr>
                             <tr>
                               <td>G395M/F290LP</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Calibrated 2D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Distortion-corrected 2D spectra</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Flux-calibrated 1D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F290LP-G395M/2D_spec.zip">Distortion-corrected 2D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F290LP-G395M/1D_spec.zip">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_F290LP-G395M/fluxcal_1D_spec.zip">Flux-calibrated 1D spectra</a></td>
                             </tr>
                             <tr>
                               <td>Prism/Clear</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Calibrated 2D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Distortion-corrected 2D spectra</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/TEMP">Flux-calibrated 1D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_CLEAR-PRISM/2D_spec.zip">Distortion-corrected 2D spectra</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_CLEAR-PRISM/1D_spec.zip">Extracted 1D spectra</a><br><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/reduced_spectra/CEERS3_CLEAR-PRISM/fluxcal_1D_spec.zip">Flux-calibrated 1D spectra</a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -184,15 +183,15 @@
                       <!-- Data Reduction -->
                       <h3 id="nirspec-reduction">Data reduction</h3>
                       <p style="margin-top:-1em;">Reducing the count-rate maps through the JWST Calibration Pipeline requires a considerable amount of time and memory. We therefore provide instructions on how to reduce the simulated data in two parts:</p>
-                      <p style="margin-top:-1.5em;"><b>Part 1 (recommended starting place):</b></p>
-                      <p class="tab" style="margin-top:-2em;">Part 1 incluces all input files necessary to reduce exposures for one prism observation and one G395M observation, including a notebook (CEERS_NIRSpec_MSA_reduction.ipynb) that demonstrates running the Calibration Pipeline steps as well as custom processing steps we've developed for the simulated data.</p>
-                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/part1.tar.gz">Download part1.tar.gz</a> (XXX MB). Note: untars to XXX GB and takes up <b>~XXX GB</b> including all calibration pipeline outputs, i.e., after running all steps in the notebook.</p>
+                      <p style="margin-top:-1.5em;"><b>CEERS3 NIRSpec MSA Detailed Reduction (Part 1, recommended starting place):</b></p>
+                      <p class="tab" style="margin-top:-2em;">Part 1 incluces all input files necessary to reduce exposures for one prism observation and one G395M observation, including a notebook (CEERS_NIRSpec_MSA_detailed_reduction.ipynb) that demonstrates running the Calibration Pipeline steps as well as custom processing steps we've developed for the simulated data.</p>
+                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/CEERS3_NIRSpec_MSA_detailed_reduction.zip">Download CEERS3_NIRSpec_MSA_detailed_reduction.zip</a> (~400 MB). Note: unzips to 1.7 GB and takes up <b>~6 GB</b> including all reference files and calibration pipeline outputs, i.e., after running all steps in the notebook.</p>
 
-                      <p><b>Part 2:</b></p>
-                      <p class="tab" style="margin-top:-2em;">Part 2 provides the full reduction of the complete pointing 3, with steps provided in the Jupyter notebook full_NIRSpec_reduction.ipynb.</p>
-                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/part2.tar.gz">Download part2.tar.gz</a> (~XXX GB). Note: untars to ~XX GB and takes up <b>~XX GB</b> after performing all steps. </p>
+                      <p><b>CEERS3 Full NIRSpec Reduction (Part 2):</b></p>
+                      <p class="tab" style="margin-top:-2em;">Part 2 provides the full reduction of the complete pointing 3, with steps provided in the Jupyter notebook CEERS3_full_NIRSpec_reduction.ipynb.</p>
+                      <p class="tab"><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR2/NIRSpec/CEERS3_full_NIRSpec_reduction.zip">Download CEERS3_full_NIRSpec_reduction.zip</a> (~3 GB). Note: unzips to ~4.6 GB and takes up <b>~12.5 GB</b> after performing all steps. </p>
 
-                      <p>Please consult the README files packaged with each tarball before performing any of the reduction steps.</p>
+                      <p>Please consult the README files packaged with each zipped directory before performing any of the reduction steps.</p>
 
                   </section>
                 </article>
