@@ -104,9 +104,31 @@
                 <article class="post">
                   <h2>CEERS Data Releases</h2>
                   <p style="font-size:1.4em;">Please consider <b><a href="https://forms.gle/SdQnETMHdCBzcuMB9" target="_blank">subscribing to our email list</a></b> to receive updates related to released data products and alerts when future data releases are available.</p>
-                  <p class="tab" style="margin-top:-1em;"><a href="#hdr1">HST Data Release v1 (HDR1)</a></p>
-                  <p class="tab"><a href="#sdr1">Simulated Data Release v1 (SDR1)</a></p> 
+                  <p class="tab" style="margin-top:-1em;"><a href="#sdr2">Simulated Data Release v2 (SDR2)</a> &#8211; NIRSpec MSA</p>
+                  <p class="tab"><a href="#hdr1">HST Data Release v1 (HDR1)</a> &#8211; HST mosaics with improved astrometry</p>
+                  <p class="tab"><a href="#sdr1">Simulated Data Release v1 (SDR1)</a> &#8211; NIRCam + MIRI Imagin, SAM Mock Catalog</p> 
                 </article>
+
+
+              <!-- Simulated Observations, SDR2 -->
+                <article class="post" id=sdr2>
+                  <section>
+                    <h3>Simulated Data Release v2 (SDR2)</h3>
+                      <p>Released: February, 2022</p>
+
+                      <h4>V2 data release</h4>
+                      <p>In this v2 data release, we provide simulated NIRSpec MSA observations for one CEERS pointing. We provide fully reduced and calibrated spectra in all CEERS filter/grating configurations as well as Jupyter notebooks showing how to reduce the data through the JWST Calibration Pipeline.</p>
+                      <h4>Visit the links below for:</h4>
+                        <ul>
+                          <li> <a href="sdr2.html">NIRSpec MSA simulations of CEERS pointing 3</a>, created with the NIRSpec IPS</li>
+                          <li><b>Coming soon:</b> NIRCam WFSS simulalations, created with MIRAGE</li>
+                        </ul>
+
+                      <h4>Future expected data releases</h4>
+                      <p>We plan to release NIRSpec MSA simulations for all 6 CEERS NIRSpec pointings and MSA simulations that include some extended sources in a future data release.</p>
+                  </section>
+                </article>
+
 
               <!-- HST Data Release,HDR1 -->
                 <article class="post" id=hdr1>
@@ -147,13 +169,12 @@
                       <h4>Observing configuration for CEERS simulations</h4> 
                       <p>CEERS has 10 NIRCam pointings, shown in blue in the figure above with each module labeled with the pointing number. Pointings 1-6 are taken in parallel to prime NIRSpec MSA observations (shown in green), while pointings 7-10 are taken in parallel to prime MIRI imaging observations (shown in red). We also observe pointings 5-8 with the NIRCam WFSS (outlined in cyan) with MIRI imaging in parallel. While the CEERS observing configuration will not be finalized until after launch and Cy1 scheduling, <b>we adopt the June 2022 configuration (above) for our simulations.</b></p>
                       <h4>V1 data release</h4>
-                      <p>In this v1 data release, we provide simulated raw CEERS data for one pointing of NIRCam imaging, six pointings of MIRI imaging, and NIRCam wide field slitless spectroscopy (WFSS). We provide readme files for each instrument mode, Jupyter notebooks showing how to reduce the raw data through the JWST Calibration Pipeline, and the mock catalog of JWST photometry and galaxy properties that is used as input for the simulations.</p>
+                      <p>In this v1 data release, we provide simulated raw CEERS data for one pointing of NIRCam imaging and six pointings of MIRI imaging. We provide readme files for each instrument mode, Jupyter notebooks showing how to reduce the raw data through the JWST Calibration Pipeline, and the mock catalog of JWST photometry and galaxy properties that is used as input for the simulations.</p>
                       <h4>Visit the links below for:</h4>
                         <ul>
                           <li> <a href="sdr1.html">NIRCam imaging simulations of CEERS pointing 5</a>, created with MIRAGE</li>
                           <li> <a href="sdr1.html#miri-imaging">MIRI simulations of CEERS pointings 5-10</a>, created with MIRISIM</li>
                           <li> <a href="sdr1.html#catalogs">Input mock catalog</a>, created from the Santa Cruz Semi-Analytic Model (SAM)</li>
-                          <li><b>Coming soon:</b> NIRCam WFSS simulalations, created with MIRAGE</li>
                         </ul>
 
                       <h4>Future expected data releases</h4>
