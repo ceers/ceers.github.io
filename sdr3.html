@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>SDR3</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/mirror3.ico">
+  </head>
+  <body class="single is-preload">
+
+      <!-- Wrapper -->
+        <div id="wrapper">
+
+          <!-- Header -->
+            <header id="header">
+              <h1><a href="index.html" style="color: #f2a004;">CEERS</a></h1>
+              <nav class="links">
+                <ul>
+                  <li><a href="overview.html">Overview</a></li>
+                  <li><a href="releases.html">Data Releases</a></li>
+                  <li><a href="goals.html">Project Goals</a></li>
+                  <li><a href="obs.html">Obs Modes</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="updates.html">Community Engagement</a></li>
+                </ul>
+              </nav>
+              <nav class="main">
+                <ul>
+                  <li class="menu">
+                    <a class="fa-bars" href="#menu">Menu</a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+
+          <!-- Menu -->
+            <section id="menu">
+
+              <!-- Links -->
+                <section>
+                  <ul class="links">
+                    <li>
+                      <a href="overview.html">
+                        <h3>CEERS Overview</h3>
+                        <p>JWST ERS Project</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="releases.html">
+                        <h3>Data Releases</h3>
+                        <p>Simulated JWST Observations</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="goals.html">
+                        <h3>Project Goals</h3>
+                        <p>High redshift Science</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="obs.html">
+                        <h3>Planned Observing Modes</h3>
+                        <p>NIRCam, MIRI, NIRSpec</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="team.html">
+                        <h3>CEERS Team Members</h3>
+                        <p>18 CoIs from 12 Institutions</p>
+                        <p>100+ Collaborators</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="updates.html">
+                        <h3>Community Engagement</h3>
+                        <p>Team Activities related to Cy1 preparation</p>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
+              <!-- Actions -->
+                <section>
+                  <ul class="actions stacked">
+                    <li><a href="https://wikis.utexas.edu/display/ceers/" class="button large fit">Team Login</a></li>
+                  </ul>
+                </section>
+
+            <!-- End Menu -->
+            </section>
+
+            <!-- Main -->
+            <div id="main">
+
+            <!-- Post Heading -->
+                <article class="post">
+                  <h2>CEERS Simulated Data Release v3</h2>
+                  <p style="font-size:1.4em;">Please consider <b><a href="https://forms.gle/SdQnETMHdCBzcuMB9" target="_blank">subscribing to our email list</a></b> to receive updates related to released data products and alerts when future data releases are available.</p>
+                  <p class="tab" style="margin-top:-1em;"><a href="#nircam-grism">NIRCam Wide Field Slitless Spectroscopy (WFSS)</a></p> 
+                  <p class="tab">NIRCam Imaging
+                    <ul class="tab">
+                      <li><a href="#nircam-imaging-one">Single Pointing Mosaics</a></li>
+                      <li><a href="#nircam-imaging-full">Full Field Mosaics</a></li>
+                    </ul></p>
+                  <p class="tab" style="margin-top:-1em;"><a href="#catalogs">Input Mock Catalogs</a></p>
+                </article>
+
+              <!-- SDR3 NIRCam WFSS-->
+                <article class="post" id=nircam-grism>
+                  <section>
+                    <h3>Simulated NIRCam Wide Field Slitless Spectroscopy for CEERS Pointings 5-8</h3>
+
+                      <p>We have simulated NIRCam WFSS observations and the associated imaging for all four CEERS pointings (CEERS 5-8) using MIRAGE version 2.2.1, with input sources taken from a mock catalog created using the Santa Cruz semi-analytic model for galaxy evolution. The images were simulated using pointing and XML files based on the CEERS APT. NIRCam WFSS exposures in each grism are taken with one <a href="https://jwst-docs.stsci.edu/jwst-near-infrared-camera/nircam-observing-modes/nircam-wide-field-slitless-spectroscopy#NIRCamWideFieldSlitlessSpectroscopy-DirectImagingDirectimaging" target="_blank">LWC direct image followed by two LWC out-of-field images</a> to identify the sources associated with the spectra. During all CEERS WFSS observations and LWC imaging, the SWC observes with F115W to add depth to the NIRCam imaging in these fields.</p>
+                      <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/README.txt" target="_blank">README</a> describing the release.</p>
+                      <p style="margin-top:-1em;">Alternatively, <a href="#wfss-data">see below</a> to access the input models, raw data, calibrated count rate images, and extracted spectra.</p>
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: NIRCam</li>
+                          <li>Mode: WFSS</li>
+                          <li>Source of Simulations: MIRAGE v2.2.1, grismconf V3</li>
+                          <li>Calibration Pipeline Used: jwst v1.4.2</li>
+                          <li>APT: CEERS ERS 1345</li>
+                          <li>Target: CEERS Pointings 5-8 (as primary with MIRI parallels)</li>
+                          <li>Filters: SWC F115W; LWC F356W, GRISMR, GRISMC</li>
+                          <li>Readout: SHALLOW4</li>
+                          <li>Observation specification: 6 groups, 1 integration</li>
+                          <li>Dithers: 4 point dither in each filter, defined with MIRI parallels; direct and out-of-field imaging with each set of grism exposures</li>
+                        </ul>
+
+                      <!--  Data  -->
+                      <h3 id=wfss-data>WFSS Data</h3>
+                      <ul>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/catalogs" target="_blank">Catalogs</a> - Input catalogs and spectra</li>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds" target="_blank">Directory of Seed Images</a> (or <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/seeds.tar.gz" target="_blank">tarball of all 64 seed images</a>, 1.8 GB untars to 2.1 GB) - The input seed images, i.e., noiseless simulated data</li>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/SBE" target="_blank">SBE</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/SBE.tar.gz" target="_blank">tarball</a>, XX GB untars to 5.6 GB) - Datacubes containing all of the individual simulated sources</li>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal" target="_blank">Raw Images</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/uncal.tar.gz" target="_blank">tarball</a>, XX GB untars to 31 GB) - All of the Mirage raw output, which can be run through the JWST Calibration Pipeline</li>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate" target="_blank">Count Rate Maps</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/rate.tar.gz" target="_blank">tarball</a>, XX GB, untars to 53 GB) - Data in DN/s, these have been run through Stage 1 and WCS assignment of the Calibration Pipeline. They can be used to extract spectra in the "classic" way. Note that flat fields have not been applied to these files.</li>
+                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/Extracted" target="_blank">Extracted</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/Extracted.tar.gz" target="_blank">tarball</a>, XX GB, untars to 180 MB) - Extracted spectra using a mock, idealized extraction.</li>
+                      </ul>
+
+                  </section>
+                </article>
+
+                
+                <!-- SDR3 NIRCam Imaging CEERS 5-->
+                <article class="post" id=nircam-imaging-one>
+                  <section>
+                    <h3>Simulated NIRCam Imaging Mosaics of a Single Pointing</h3>
+                      <p>Here we provide an updated set of NIRCam imaging mosaics covering a <b>single CEERS pointing (CEERS 5)</b>. We suggest starting with a single pointing when exploring source detection and photometry methods on CEERS imaging, rather than the <a href="#nircam-imaging-full">full field mosaics</a> that are available below.</p> 
+                      <p style="margin-top:-1em;">This is the same CEERS pointing that was released as part of <a href="sdr1.html" target="_blank">SDR1</a>, but with <b>three updates/improvements</b>:
+                        <ul style="margin-top:-1em;">
+                          <li>The images were simulated with updated photometry from the Santa Cruz SAM mock catalog that now includes dust. The updated input catalog is available <a href="#catalogs">here</a>.</li>
+                          <li>We've included additional imaging in F115W that will be taken as the SWC counterpart to the <a href="#nircam-grism">NIRCam WFSS observations</a> in this field. We've also included a small number of additional F356W images that will be obtained as direct and out-of-field images for the WFSS observations.</li>
+                          <li>The images are now pixel-aligned across all filters.</li>
+                        </ul></p>
+                      <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/README.txt" target="_blank">README</a> describing the release. Alternatively, see below to access the fully reduced <a href="#nircam-mosaics-one">mosaics in each filter</a>.</p>
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: NIRCam</li>
+                          <li>Mode: Imaging</li>
+                          <li>Source of Simulations: MIRAGE v2.2.1</li>
+                          <li>Calibration Pipeline Used: jwst v1.5.1</li>
+                          <li>APT (version 2021.2): CEERS ERS 1345</li>
+                          <li>Target: CEERS Pointing 5 (in parallel with prime NIRSpec MSA)</li>
+                          <li>Filters: SWC F115W, F150W, F200W; LWC F277W, F356W, F444W</li>
+                          <li>Readout: MEDIUM8</li>
+                          <li>Observation specification: 9 groups, 1 integration</li>
+                          <li>Dithers: 3 point dither in each filter, defined by the 3 slitlet nods of the NIRSpec primary observations</li>
+                        </ul>
+                       
+                      <!--  Mosaics  -->  
+                      <h3 id=nircam-mosaics-one>Mosaics</h3>
+                      <ul>
+                        <li>Fully reduced mosaics in all 6 filters for a single CEERS pointing are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/" target="_blank">here</a> or in the table below. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/README.txt" target="_blank">README</a>.</li>
+                        <li>The mosaics are on pixel scales of 0.03"/pix and are pixel aligned across all filters.</li>
+                        <li>We have gzipped all files to save on space. The full images, called 'i2d' are ~1 GB and unzip to ~1.4 GB. We have also separated individual extensions (maintaining the <a href="https://jwst-pipeline.readthedocs.io/en/latest/jwst/datamodels/index.html" target="_blank">JWST data model</a> structure and additional metadata), each of which is ~100-180 MB and unzips to ~200 MB.</li>
+                      </ul>
+
+                      <div class="table-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>FILTER</th>
+                              <th style='text-align:center'>FULL i2d</th>
+                              <th style='text-align:center'>SCI EXTENSION</th>
+                              <th style='text-align:center'>WHT EXTENSION</th>
+                              <th style='text-align:center'>ERR EXTENSION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>F115W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_i2d.fits.gz">ceers5_f115w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_sci.fits.gz">ceers5_f115w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_wht.fits.gz">ceers5_f115w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_err.fits.gz">ceers5_f115w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>'Partial' F115W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_i2d.fits.gz">ceers5_f115w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_sci.fits.gz">ceers5_f115w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_wht.fits.gz">ceers5_f115w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_err.fits.gz">ceers5_f115w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F150W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f150w_i2d.fits.gz">ceers5_f150w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f150w_sci.fits.gz">ceers5_f150w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f150w_wht.fits.gz">ceers5_f150w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f150w_err.fits.gz">ceers5_f150w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F200W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f200w_i2d.fits.gz">ceers5_f200w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f200w_sci.fits.gz">ceers5_f200w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f200w_wht.fits.gz">ceers5_f200w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f200w_err.fits.gz">ceers5_f200w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F277W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f277w_i2d.fits.gz">ceers5_f277w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f277w_sci.fits.gz">ceers5_f277w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f277w_wht.fits.gz">ceers5_f277w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f277w_err.fits.gz">ceers5_f277w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F356W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f356w_i2d.fits.gz">ceers5_f356w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f356w_sci.fits.gz">ceers5_f356w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f356w_wht.fits.gz">ceers5_f356w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f356w_err.fits.gz">ceers5_f356w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F444W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f444w_i2d.fits.gz">ceers5_f444w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f444w_sci.fits.gz">ceers5_f444w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f444w_wht.fits.gz">ceers5_f444w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f444w_err.fits.gz">ceers5_f444w_err.fits.gz</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                           
+                            
+                  </section>
+                </article>
+
+
+                <!-- SDR3 NIRCam Imaging Full Field-->
+                <article class="post" id=nircam-imaging-full>
+                  <section>
+                    <h3>Simulated NIRCam Imaging Mosaics of the Full CEERS Field</h3>
+                      <p>Here we provide NIRCam imaging mosaics covering the <b>full CEERS field (all 10 pointings)</b>. We suggest starting with a <a href="#nircam-imaging-one">single pointing</a> when exploring source detection and photometry methods on CEERS imaging.</p> 
+                      <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/README.txt" target="_blank">README</a> describing the release.</p>
+                      <p style="margin-top:-1em;">Alternatively, see below to access the fully reduced <a href="#nircam-mosaics-full">mosaics in each filter</a>.</p>
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: NIRCam</li>
+                          <li>Mode: Imaging</li>
+                          <li>Source of Simulations: MIRAGE v2.2.1</li>
+                          <li>Calibration Pipeline Used: jwst v1.5.1</li>
+                          <li>APT (version 2021.2): CEERS ERS 1345</li>
+                          <li>Target: CEERS Pointings 1-10</li>
+                          <li>Filters: SWC F115W, F150W, F200W; LWC F277W, F356W, F410M, F444W</li>
+                          <li>Readout/Observation Specification: various</li>
+                          <li>Dithers: 3-point and 4-point dithers, defined by the primary instruments or by the WFSS observations</li>
+                        </ul>
+                       
+                      <!--  Mosaics  -->  
+                      <h3 id=nircam-mosaics-full>Mosaics</h3>
+                      <ul>
+                        <li>Fully reduced mosaics in all 7 filters for the full CEERS field are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/" target="_blank">here</a> or in the table below. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/README.txt" target="_blank">README</a>.</li>
+                        <li>The mosaics are on pixel scales of 0.03"/pix and are pixel aligned across all filters.</li>
+                        <li>We have gzipped all files to save on space. The full images, called 'i2d' are <b>~19 GB and unzip to 19 GB!</b> We have also separated individual extensions (maintaining the <a href="https://jwst-pipeline.readthedocs.io/en/latest/jwst/datamodels/index.html" target="_blank">JWST data model</a> structure and additional metadata), each of which is ~1.1-1.3 GB and unzips to 2.7 GB.</li>
+                      </ul>
+
+                      <div class="table-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>FILTER</th>
+                              <th style='text-align:center'>FULL i2d</th>
+                              <th style='text-align:center'>SCI EXTENSION</th>
+                              <th style='text-align:center'>WHT EXTENSION</th>
+                              <th style='text-align:center'>ERR EXTENSION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>F115W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f115w_i2d.fits.gz">ceers_f115w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f115w_sci.fits.gz">ceers_f115w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f115w_wht.fits.gz">ceers_f115w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f115w_err.fits.gz">ceers_f115w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F150W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f150w_i2d.fits.gz">ceers_f150w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f150w_sci.fits.gz">ceers_f150w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f150w_wht.fits.gz">ceers_f150w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f150w_err.fits.gz">ceers_f150w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F200W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f200w_i2d.fits.gz">ceers_f200w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f200w_sci.fits.gz">ceers_f200w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f200w_wht.fits.gz">ceers_f200w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f200w_err.fits.gz">ceers_f200w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F277W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f277w_i2d.fits.gz">ceers_f277w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f277w_sci.fits.gz">ceers_f277w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f277w_wht.fits.gz">ceers_f277w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f277w_err.fits.gz">ceers_f277w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F356W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f356w_i2d.fits.gz">ceers_f356w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f356w_sci.fits.gz">ceers_f356w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f356w_wht.fits.gz">ceers_f356w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f356w_err.fits.gz">ceers_f356w_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F410M</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f410m_i2d.fits.gz">ceers_f410m_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f410m_sci.fits.gz">ceers_f410m_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f410m_wht.fits.gz">ceers_f410m_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f410m_err.fits.gz">ceers_f410m_err.fits.gz</a></td>
+                            </tr>
+                            <tr>
+                              <td>F444W</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f444w_i2d.fits.gz">ceers_f444w_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f444w_sci.fits.gz">ceers_f444w_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f444w_wht.fits.gz">ceers_f444w_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/ceers_f444w_err.fits.gz">ceers_f444w_err.fits.gz</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                           
+                            
+                  </section>
+                </article>
+
+
+                <!-- SDR3 Catalogs -->
+                <article class="post" id=catalogs>
+                  <section>
+                    <h3>Mock Galaxy Catalog</h3>
+                      <p>The main input for our simulated images is a mock galaxy catalog created with the Santa Cruz Semi-Analytic Model (SAM). This catalog covers a field of 782 sq. arcmin, overlapping with the observed EGS field and spanning z ~ 0 to 10.
+                      The mock catalog will be presented in Yung et al. (in prep). The physical model is configured identically as the model presented in <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.4858S/abstract">Somerville et al. (2021)</a>. <p>
+
+                 <!--     <p>The base of the mock catalog is a lightcone constructed from a dark matter N-body simulation. The lightcone provides mock positions in the sky for sources, and the SAM provides an estimate of the DM halo merger histories. The SAM simulates the properties of galaxies in the halos using recipes for the physical processes that shape galaxy evolution (accretion, cooling, star formation, etc.). The physical properties are then forward modeled to create synthetic SEDs and JWST photometry. Nebular emission lines were added to the SEDs and are included in the broad and median band NIRCam photometry.</p>  -->
+        
+                      <p style="margin-top:-1em;">Download the CEERS SAM mock galaxy catalog:<p>
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.fits">FITS table</a> (~800 MB)</li> 
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.cat">ASCII table</a> (1.2 GB)</li>  
+                          <li><b>Please note that this version of the SAM catalog DOES include extinction by dust</b>. This version is an update to that presented in <a href='sdr1.html'>SDR1</a> and was used to create the <a href="#nircam-imaging-one">SDR3 NIRCam Imaging Mosaics</a>, and so is appropriate to use in comparison with those simulated products.</li>
+                        </ul>
+                      <p style="margin-top:-1em;">Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/SAM_README.txt" target="_blank">README</a> describing the catalog, columns, and the references related to the creation of the SAM.</p>
+
+                    <h3>Additional Inputs - high-redshift Galaxies and Point sources</h3>
+                      <p>We have also added the seven z~9 galaxies in the EGS field presented by <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210613813F/abstract">Finkelstein et al. (2021)</a> to the simulations. The JWST photometry is estimated using the best-fit EAZY template for each source's Hubble and Spitzer photometry. Download the catalog of z~9 source positions and photometry:<p>
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/EGSz9.cat">Catalog</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/EGSz9_README.txt" target="_blank">README</a></li>
+                        </ul>
+
+
+                      <p>Finally, we have included point sources in the NIRCam imaging simulations. The positions and magnitudes of bright (V&lt;16) point sources in the EGS field are added from 2MASS, WISE and Gaia. We added fainter point sources (16 &lt; V &lt; 29) using the <a href="https://model.obs-besancon.fr/">Besan&#231;on Model</a> to approximate the correct stellar density and luminosity distribution in the EGS field. Download the catalog of point sources:<p>
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc.cat">Catalog</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc_README.txt" target="_blank">README</a></li>
+                        </ul>
+                      <p style="margin-top:-1em;"><b>Note:</b> the point source catalog is in Vega magnitudes, while all other input catalogs are in AB magnitudes.
+                      </p>
+                </article>
+                  </section>
+                
+
+            <!-- End Main -->
+            </div>
+
+            <!-- Footer -->
+              <section id="footer">
+                <ul class="icons">
+                  <li><a href="https://twitter.com/ceers_jwst" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
+       <!--           <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <p class="copyright" style="color:#f2a004; margin-left: 1.5em;">&copy; CEERS. Design: <a href="http://html5up.net">HTML5 UP</a>. </p>
+              </section>
+
+        <!-- End Wrapper -->
+        </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/modals"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
