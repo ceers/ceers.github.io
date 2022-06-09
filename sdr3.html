@@ -105,12 +105,14 @@
                   <h2>CEERS Simulated Data Release v3</h2>
                   <p style="font-size:1.4em;">Please consider <b><a href="https://forms.gle/SdQnETMHdCBzcuMB9" target="_blank">subscribing to our email list</a></b> to receive updates related to released data products and alerts when future data releases are available.</p>
                   <p class="tab" style="margin-top:-1em;"><a href="#nircam-grism">NIRCam Wide Field Slitless Spectroscopy (WFSS)</a></p> 
-                  <p class="tab">NIRCam Imaging
+                  <p class="tab"><a href="#nircam-imaging-one">NIRCam Imaging</a></p>
+                    <!--
                     <ul class="tab">
                       <li><a href="#nircam-imaging-one">Single Pointing Mosaics</a></li>
                       <li><a href="#nircam-imaging-full">Full Field Mosaics</a></li>
                     </ul></p>
-                  <p class="tab" style="margin-top:-1em;"><a href="#catalogs">Input Mock Catalogs</a></p>
+                    -->
+                  <p class="tab"><a href="#catalogs">Input Mock Catalogs</a></p>
                 </article>
 
               <!-- SDR3 NIRCam WFSS-->
@@ -139,14 +141,43 @@
 
                       <!--  Data  -->
                       <h3 id=wfss-data>WFSS Data</h3>
-                      <ul>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/catalogs" target="_blank">Catalogs</a> - Input catalogs and spectra</li>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds" target="_blank">Directory of Seed Images</a> (or <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/seeds.tar.gz" target="_blank">tarball of all 64 seed images</a>, 1.8 GB untars to 2.1 GB) - The input seed images, i.e., noiseless simulated data</li>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/SBE" target="_blank">SBE</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/SBE.tar.gz" target="_blank">tarball</a>, XX GB untars to 5.6 GB) - Datacubes containing all of the individual simulated sources</li>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal" target="_blank">Raw Images</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/uncal.tar.gz" target="_blank">tarball</a>, XX GB untars to 31 GB) - All of the Mirage raw output, which can be run through the JWST Calibration Pipeline</li>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate" target="_blank">Count Rate Maps</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/rate.tar.gz" target="_blank">tarball</a>, XX GB, untars to 53 GB) - Data in DN/s, these have been run through Stage 1 and WCS assignment of the Calibration Pipeline. They can be used to extract spectra in the "classic" way. Note that flat fields have not been applied to these files.</li>
-                        <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/Extracted" target="_blank">Extracted</a> (<a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/Extracted.tar.gz" target="_blank">tarball</a>, XX GB, untars to 180 MB) - Extracted spectra using a mock, idealized extraction.</li>
-                      </ul>
+                        <p><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/catalogs" target="_blank">Catalogs</a> - Input catalogs and spectra</p>
+                        <p style="margin-top:-1em;">Dispersed seed images - the input seed images, i.e., noiseless simulated data
+                          <ul style="margin-top:-2em;">
+                            <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds" target="_blank">Directory of seed images</a></li>
+                            <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds.tar.gz" target="_blank">Tarball of all dispered seed images</a> (1.8 GB, untars to 2.1 GB)</li>
+                          </ul>
+                        </p>
+                        <p style="margin-top:-1em;">Datacubes containing all of the individual simulated sources</p>
+                          <ul style="margin-top:-2em;">
+                            <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/SBE" target="_blank">Directory of SBE datacubes</a></li> 
+                            <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/seeds/SBE.tar.gz" target="_blank">Tarball of datacubes</a> (4.3 GB, untars to 5.6 GB)</li>
+                          </ul>
+                        </p>
+                        <p style="margin-top:-1em;">All of the Mirage raw output (including direct imaging), which can be run through the JWST Calibration Pipeline
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal" target="_blank">Directory of raw data</a></li> 
+                         <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal_part1.tar.gz" target="_blank">Tarball part 1</a> (140 files, XX GB, untars to XX GB)</li>
+                         <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal_part2.tar.gz" target="_blank">Tarball part 2</a> (140 files, XX GB, untars to XX GB)</li>
+                         <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal_part3.tar.gz" target="_blank">Tarball part 3</a> (140 files, XX GB, untars to XX GB)</li>
+                         <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/uncal_part4.tar.gz" target="_blank">Tarball part 4</a> (140 files, XX GB, untars to XX GB)</li>
+                          </ul>
+                        </p>
+                        <p style="margin-top:-1em;">Data in DN/s (including direct imaging), these have been run through Stage 1 and WCS assignment of the Calibration Pipeline. They can be used to extract spectra in the "classic" way. Note that flat fields have not been applied to these files.
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate" target="_blank">Directory of count rate maps</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate_part1.tar.gz" target="_blank">Tarball, part 1</a> (140 files, 9.4 GB, untars to 14 GB</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate_part2.tar.gz" target="_blank">Tarball, part 2</a> (140 files, 9.4 GB, untars to 14 GB</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate_part3.tar.gz" target="_blank">Tarball, part 3</a> (140 files, 9.4 GB, untars to 14 GB</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/rate_part4.tar.gz" target="_blank">Tarball, part 4</a> (140 files, 9.4 GB, untars to 14 GB</li>
+                          </ul>
+                        </p>
+                        <p style="margin-top:-1em;"> Extracted spectra using a mock, idealized extraction. See the <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/README.txt" target="_blank">README</a> for information on the extraction and reading in the extracted spectra.
+                        <ul style="margin-top:-2em;">
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/Extracted" target="_blank">Directory of extracted spectra</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/wfss/Extracted.tar.gz" target="_blank">Tarball of extracted spectra</a> (~120 MB, untars to ~180 MB)</li>
+                          </ul>
+                        </p>
 
                   </section>
                 </article>
@@ -156,8 +187,9 @@
                 <article class="post" id=nircam-imaging-one>
                   <section>
                     <h3>Simulated NIRCam Imaging Mosaics of a Single Pointing</h3>
-                      <p>Here we provide an updated set of NIRCam imaging mosaics covering a <b>single CEERS pointing (CEERS 5)</b>. We suggest starting with a single pointing when exploring source detection and photometry methods on CEERS imaging, rather than the <a href="#nircam-imaging-full">full field mosaics</a> that are available below.</p> 
-                      <p style="margin-top:-1em;">This is the same CEERS pointing that was released as part of <a href="sdr1.html" target="_blank">SDR1</a>, but with <b>three updates/improvements</b>:
+                      <p>Here we provide an updated set of NIRCam imaging mosaics covering a <b>single CEERS pointing (CEERS 5)</b>. 
+<!--We suggest starting with a single pointing when exploring source detection and photometry methods on CEERS imaging, rather than the <a href="#nircam-imaging-full">full field mosaics</a> that are available below.</p> -->
+                      This is the same CEERS pointing that was released as part of <a href="sdr1.html" target="_blank">SDR1</a>, but with <b>three updates/improvements</b>:
                         <ul style="margin-top:-1em;">
                           <li>The images were simulated with updated photometry from the Santa Cruz SAM mock catalog that now includes dust. The updated input catalog is available <a href="#catalogs">here</a>.</li>
                           <li>We've included additional imaging in F115W that will be taken as the SWC counterpart to the <a href="#nircam-grism">NIRCam WFSS observations</a> in this field. We've also included a small number of additional F356W images that will be obtained as direct and out-of-field images for the WFSS observations.</li>
@@ -171,13 +203,15 @@
                           <li>Instrument: NIRCam</li>
                           <li>Mode: Imaging</li>
                           <li>Source of Simulations: MIRAGE v2.2.1</li>
-                          <li>Calibration Pipeline Used: jwst v1.5.1</li>
+                          <li>Calibration Pipeline Used: jwst v1.4.7a1.dev23 (a development version)</li>
+                          <li>CRDS Context: 0791</li>
                           <li>APT (version 2021.2): CEERS ERS 1345</li>
-                          <li>Target: CEERS Pointing 5 (in parallel with prime NIRSpec MSA)</li>
+                          <li>Target: CEERS Pointing 5 (in parallel with prime NIRSpec MSA), with additional depth in F115W and F356W obtained as part of the NIRCam WFSS observations in this field</li>
                           <li>Filters: SWC F115W, F150W, F200W; LWC F277W, F356W, F444W</li>
-                          <li>Readout: MEDIUM8</li>
-                          <li>Observation specification: 9 groups, 1 integration</li>
-                          <li>Dithers: 3 point dither in each filter, defined by the 3 slitlet nods of the NIRSpec primary observations</li>
+                          <li>Readout: MEDIUM8 (NIRSpec parallel); SHALLOW4 (WFSS imaging)</li>
+                          <li>Observation specification: 9 groups, 1 integration (NIRSpec parallel); 6 groups, 1 integration (WFSS imaging)</li>
+                          <li>Dithers: 3 dithers, steps specified by NIRSpec nods (NIRSpec parallel); 
+                              4 dithers, steps specified by MIRI parallel, with direct images and out of field imaging (WFSS imaging) </li>
                         </ul>
                        
                       <!--  Mosaics  -->  
@@ -185,7 +219,8 @@
                       <ul>
                         <li>Fully reduced mosaics in all 6 filters for a single CEERS pointing are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/" target="_blank">here</a> or in the table below. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/README.txt" target="_blank">README</a>.</li>
                         <li>The mosaics are on pixel scales of 0.03"/pix and are pixel aligned across all filters.</li>
-                        <li>We have gzipped all files to save on space. The full images, called 'i2d' are ~1 GB and unzip to ~1.4 GB. We have also separated individual extensions (maintaining the <a href="https://jwst-pipeline.readthedocs.io/en/latest/jwst/datamodels/index.html" target="_blank">JWST data model</a> structure and additional metadata), each of which is ~100-180 MB and unzips to ~200 MB.</li>
+                        <li>We have gzipped all files to save on space. The full images, called 'i2d', are ~1 GB and unzip to ~1.4 GB. We have also separated individual extensions (maintaining the <a href="https://jwst-pipeline.readthedocs.io/en/latest/jwst/datamodels/index.html" target="_blank">JWST data model</a> structure and additional metadata), each of which is ~100-180 MB and unzips to ~200 MB.</li>
+                        <li>Two versions of the F115W images are available: the full depth mosaic including the SWC imaging taken during the WFSS observations (ceers5_f115w_*), and the imaging excluding the F115W exposures from the WFSS observations (ceers5_f115w_partial_*)</li>
                       </ul>
 
                       <div class="table-wrapper">
@@ -209,10 +244,10 @@
                             </tr>
                             <tr>
                               <td>'Partial' F115W</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_i2d.fits.gz">ceers5_f115w_i2d.fits.gz</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_sci.fits.gz">ceers5_f115w_sci.fits.gz</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_wht.fits.gz">ceers5_f115w_wht.fits.gz</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_err.fits.gz">ceers5_f115w_err.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_partial_i2d.fits.gz">ceers5_f115w_partial_i2d.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_partial_sci.fits.gz">ceers5_f115w_partial_sci.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_partial_wht.fits.gz">ceers5_f115w_partial_wht.fits.gz</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/onepointing/ceers5_f115w_partial_err.fits.gz">ceers5_f115w_partial_err.fits.gz</a></td>
                             </tr>
                             <tr>
                               <td>F150W</td>
@@ -258,6 +293,7 @@
 
 
                 <!-- SDR3 NIRCam Imaging Full Field-->
+                <!--
                 <article class="post" id=nircam-imaging-full>
                   <section>
                     <h3>Simulated NIRCam Imaging Mosaics of the Full CEERS Field</h3>
@@ -265,7 +301,6 @@
                       <p style="margin-top:-1em;">To access the full data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield" target="_blank">this link</a>. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/README.txt" target="_blank">README</a> describing the release.</p>
                       <p style="margin-top:-1em;">Alternatively, see below to access the fully reduced <a href="#nircam-mosaics-full">mosaics in each filter</a>.</p>
 
-                      <!-- Summary -->
                       <h3>Summary</h3>
                         <ul>
                           <li>Instrument: NIRCam</li>
@@ -278,8 +313,7 @@
                           <li>Readout/Observation Specification: various</li>
                           <li>Dithers: 3-point and 4-point dithers, defined by the primary instruments or by the WFSS observations</li>
                         </ul>
-                       
-                      <!--  Mosaics  -->  
+                        
                       <h3 id=nircam-mosaics-full>Mosaics</h3>
                       <ul>
                         <li>Fully reduced mosaics in all 7 filters for the full CEERS field are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/" target="_blank">here</a> or in the table below. Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/NIRCam/imaging/fullfield/README.txt" target="_blank">README</a>.</li>
@@ -354,7 +388,7 @@
                             
                   </section>
                 </article>
-
+                -->
 
                 <!-- SDR3 Catalogs -->
                 <article class="post" id=catalogs>
@@ -367,14 +401,14 @@
         
                       <p style="margin-top:-1em;">Download the CEERS SAM mock galaxy catalog:<p>
                         <ul style="margin-top:-2em;">
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.fits">FITS table</a> (~800 MB)</li> 
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.cat">ASCII table</a> (1.2 GB)</li>  
-                          <li><b>Please note that this version of the SAM catalog DOES include extinction by dust</b>. This version is an update to that presented in <a href='sdr1.html'>SDR1</a> and was used to create the <a href="#nircam-imaging-one">SDR3 NIRCam Imaging Mosaics</a>, and so is appropriate to use in comparison with those simulated products.</li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.fits">FITS table</a> (~750 MB)</li> 
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/CEERS_SAM_input.cat">ASCII table</a> (1.1 GB)</li>  
+                          <li><b>Please note that this version of the SAM catalog DOES include extinction by dust</b>. This version is an update to that presented in <a href='sdr1.html'>SDR1</a> and was used to create the <a href="#nircam-imaging-one">SDR3 NIRCam Imaging Mosaics</a>, and so is appropriate to use in comparison with these simulated products.</li>
                         </ul>
                       <p style="margin-top:-1em;">Please see the associated <a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/SAM_README.txt" target="_blank">README</a> describing the catalog, columns, and the references related to the creation of the SAM.</p>
 
                     <h3>Additional Inputs - high-redshift Galaxies and Point sources</h3>
-                      <p>We have also added the seven z~9 galaxies in the EGS field presented by <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210613813F/abstract">Finkelstein et al. (2021)</a> to the simulations. The JWST photometry is estimated using the best-fit EAZY template for each source's Hubble and Spitzer photometry. Download the catalog of z~9 source positions and photometry:<p>
+                      <p>We have also added the seven z~9 galaxies in the EGS field presented by <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928...52F/abstract" target="_blank">Finkelstein et al. (2022)</a> to the simulations. The JWST photometry is estimated using the best-fit EAZY template for each source's Hubble and Spitzer photometry. Download the catalog of z~9 source positions and photometry:<p>
                         <ul style="margin-top:-2em;">
                           <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/EGSz9.cat">Catalog</a></li>
                           <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/EGSz9_README.txt" target="_blank">README</a></li>
@@ -383,7 +417,8 @@
 
                       <p>Finally, we have included point sources in the NIRCam imaging simulations. The positions and magnitudes of bright (V&lt;16) point sources in the EGS field are added from 2MASS, WISE and Gaia. We added fainter point sources (16 &lt; V &lt; 29) using the <a href="https://model.obs-besancon.fr/">Besan&#231;on Model</a> to approximate the correct stellar density and luminosity distribution in the EGS field. Download the catalog of point sources:<p>
                         <ul style="margin-top:-2em;">
-                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc.cat">Catalog</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc_SDR3.fits">FITS table</a></li>
+                          <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc_SDR3.cat">ASCII table</a></li>
                           <li><a href="https://web.corral.tacc.utexas.edu/ceersdata/SDR3/catalogs/ptsrc_README.txt" target="_blank">README</a></li>
                         </ul>
                       <p style="margin-top:-1em;"><b>Note:</b> the point source catalog is in Vega magnitudes, while all other input catalogs are in AB magnitudes.
