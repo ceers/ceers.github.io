@@ -102,27 +102,31 @@
               <!-- Post Heading -->
                 <article class="post">
                    <h2>CEERS Observing Modes</h2>
-                   <p style="margin-bottom:0.4em;">CEERS will obtain imaging and spectroscopy of the 
-                      Extended Groth Strip (EGS) <i>HST</i> legacy field with six parallel JWST instrument modes:</p>
+                   <p style="margin-bottom:0.4em;">CEERS is obtaining imaging and spectroscopy of the Extended Groth Strip (EGS) <i>HST</i> legacy field with five parallel JWST modes with three instruments:</p>
                    <p class="tab"><a href=#nircam>NIRCam</a></p>
                    <p class="tab"><a href=#nirspec>NIRSpec</a></p>
                    <p class="tab"><a href=#miri>MIRI</a></p>
 
                  <hr> 
-                   <p>The CEERS observations are schedulable in June and December (with a 180&deg; flip). We show here the survey layout for both observability windows. Note that the APT file linked below corresponds to the December window, though with an Oct 31, 2021, launch date CEERS would likely be scheduled in June 2022. </p>
+                   <p>The CEERS observations are schedulable in June and December (with a 180&deg; flip). We are obtaining observations in two epochs, with <b><a href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22proposal_id%22%2C%22niceName%22%3A%22proposal_id%22%2C%22values%22%3A%5B%5D%2C%22valString%22%3A%221345%22%2C%22isDate%22%3Afalse%2C%22freeText%22%3A%221345%22%2C%22displayString%22%3A%221345%22%7D%5D%2C%22position%22%3A%22undefined%2C%20undefined%2C%20undefined%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered%22%2C%22title%22%3A%22MAST%3A%20%20Advanced%20Search%201%22%2C%22tooltip%22%3A%221345%3B%20%22%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D" target="_blank">four MIRI + NIRCam imaging pointings observed in June 2022</a></b>, and the remaining six NIRSpec MSA + NIRCam imaging and four NIRCam grism + MIRI imaging scheduled for December 2022.</p>
+
+                    <p style="margin-top:-1em;">We show here the complete survey layout (left), separating the June observations (middle) and the scheduled December observations (right). </p>
                     <!-- Modal observing plan -->
                     <figure>
-                      <img class="image modalimg" id="modalobs" src="images/EGS.png" alt="" title="Survey layout and planned EGS observations" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
+                      <img class="image modalimg" id="modalobs" src="images/twoepochmaps.png" alt="" title="Survey layout, current and planned observations" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
                       <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;">(Click image to enlarge.)</figcaption>
                       <div id="myModal" class="modal">
                         <div class="container">
                           <div class="close">&times;</div>
-                          <img class="modal-content" src="images/EGS.png" id="img01">
+                          <img class="modal-content" src="images/twoepochmaps.png" id="img01">
                         </div>
                      </div>
                     </figure>
                     <p></p>
-                    <p>CEERS will also be obtaining MIRI imaging in parallel to the NIRCam Slitless Spectroscopy observations, resulting in two additional MIRI pointings as well as added depth in two of the primary pointings. We show here the updated CEERS configurations for June (top) and December (bottom) observations.</p>
+            <!--
+                    <p>CEERS will also be obtaining MIRI imaging in parallel to the NIRCam Slitless Spectroscopy observations, resulting in two additional MIRI pointings as well as added depth in two of the primary pointings. We show here the updated CEERS configurations for June (top) and December (bottom) observations.</p>  -->
+
+        <!--
                     <figure>
                       <img class="image modalimg" id="modalobs" src="images/UpdatedEGS.png" alt="" title="Updated survey layout" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
                       <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;">(Click image to enlarge.)</figcaption>
@@ -133,17 +137,19 @@
                         </div>
                      </div>
                     </figure>
+                -->
                     <p></p>
                     <p>Click below to download a zipped file containing NIRCam, NIRSpec and MIRI pointing maps for each configuration. These maps are approximate, good to within ~10".</p>
                     <p><a href="images/maps/JuneMaps.zip" class="button">Download June pointing maps</a><br>
-                      <a href="images/maps/DecemberMaps.zip" class="button" style="margin-top:0.5em;">Download December pointing maps</a></p>
+                      <a href="images/maps/DecemberMaps.zip" class="button" style="margin-top:0.5em;">Download December pointing maps</a><br>
+                    <a href="images/maps/FullNIRCamMaps.zip" class="button" style="margin-top:0.5em;">Download full survey NIRCam pointing maps</a></p>
                     <hr>
                      <p>Click below to download the list of objects which received NIRSpec MSA slits in our original Aug 2017 APT submission.  This is just one realization of what the final configuration will be, but it gives a rough idea of the numbers of which types of sources will receive slits.</p>
                      <p><a href="images/ceers_slits.cat" class="button">Download MSA slit catalog</a><br>
                      <a href="images/ceers_slits.reg" class="button" style="margin-top:0.5em;">Download MSA slit region file</a>
                      </p>
                     <hr>
-                     <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx" class="button">Download CEERS APT File</a> (for December observations)<br>
+                     <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx" class="button">Download CEERS APT File</a> <br>
                      <a href="https://www.stsci.edu/jwst/phase2-public/1345.pdf" target="_blank" class="button" style="margin-top:0.5em;">Download CEERS Public PDF</a>
                      </p> 
                 </article>
