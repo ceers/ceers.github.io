@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>DR05</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/mirror3.ico">
+  </head>
+  <body class="single is-preload">
+
+      <!-- Wrapper -->
+        <div id="wrapper">
+
+          <!-- Header -->
+            <header id="header">
+              <h1><a href="index.html" style="color: #f2a004;">CEERS</a></h1>
+              <nav class="links">
+                <ul>
+                  <li><a href="overview.html">Overview</a></li>
+                  <li><a href="releases.html">Data Releases</a></li>
+                  <li><a href="papers.html">Papers</a></li>
+                  <li><a href="goals.html">Project Goals</a></li>
+                  <li><a href="obs.html">Obs Modes</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="updates.html">CEERS Blog</a></li>
+                </ul>
+              </nav>
+              <nav class="main">
+                <ul>
+                  <li class="menu">
+                    <a class="fa-bars" href="#menu">Menu</a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+
+          <!-- Menu -->
+            <section id="menu">
+
+              <!-- Links -->
+                <section>
+                  <ul class="links">
+                    <li>
+                      <a href="overview.html">
+                        <h3>CEERS Overview</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="releases.html">
+                        <h3>Data Releases</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="papers.html">
+                        <h3>CEERS Papers</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="goals.html">
+                        <h3>Project Goals</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="obs.html">
+                        <h3>Planned Observing Modes</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="team.html">
+                        <h3>CEERS Team Members</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="updates.html">
+                        <h3>CEERS Blog</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
+              <!-- Actions -->
+                <section>
+                  <ul class="actions stacked">
+                    <li><a href="https://wikis.utexas.edu/display/ceers/CEERS+Wiki+Landing+Page">Team Login</a></li>
+                  </ul>
+                </section>
+
+            <!-- End Menu -->
+            </section>
+
+            <!-- Main -->
+            <div id="main">
+
+            <!-- Post Heading -->
+                <article class="post">
+                  <h2>CEERS Data Release v0.5</h2>
+                  <p style="font-size:1.4em;">Please consider <b><a href="https://forms.gle/SdQnETMHdCBzcuMB9" target="_blank">subscribing to our email list</a></b> to receive updates related to released data products and alerts when future data releases are available.</p>
+                  <p style="margin-top:-1em;">We are excited to announce <b>CEERS Data Release 0.5!</b> Here we provide our team's reductions of the first set of CEERS observations. We also provide documentation and the scripts and Python code we used to reduce the images. See below for more information.</p>
+                  <p style="margin-top:-1em;">The CEERS observations have been split into two epochs. The first set of CEERS MIRI+NIRCam images (MIRI as the primary instrument and NIRCam in parallel) were obtained on 21 June, 2022, and involved CEERS pointings 1, 2, 3 and 6. The remaining CEERS observations (six NIRSpec MSA+NIRCam imaging and NIRCam WFSS+MIRI imaging) are scheduled for December 2022 when the field is observable with a 180&deg; position angle rotation (see <a href="obs.html">Observing Modes</a> for more info). We have also written about our Epoch 1 observations on our <a href="ceers-first-images-release.html">CEERS Blog</a>.</p>
+                  <p style="margin-top:-1em;"> Images are available on the CEERS <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05" target="_blank">storage space at the Texas Advanced Computing Center</a> or via the links below. Images will also be available on MAST soon.</p>
+                  <p class="tab" style="margin-top:-1em;"><a href="#nircam-imaging">NIRCam Imaging</a></p> 
+                  <p class="tab"><a href="#miri-imaging">MIRI Imaging</a></p> 
+                </article>
+
+              <!-- DR05 NIRCam -->
+                <article class="post" id=nircam-imaging>
+                  <section>
+                    <h3>Epoch 1 NIRCam Imaging and Reduction</h3>
+                      <p>To access the full NIRCam data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam" target="_blank">this link</a>. Alternatively, see below to access the fully reduced <a href="#nircam-mosaics">mosaics in each pointing and filter</a>. Please see the associated <b><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/README.txt" target="_blank">README</a></b> describing the release.</p>
+                      <p style="margin-top:-1.25em;">The NIRCam data reduction is discussed in detail in Bagley et al. (in prep). Please cite this paper if you use the reduced images or reduction scripts for your project. We will provide all scripts necessary to reproduce our reduction on GitHub, and will share the link here soon.</p>
+                      <!--We also provide all scripts necessary to reproduce our reduction at <a href="https://github.io/ceers/nircam" target="_blank">github.io/ceers/nircam</a>.</p> -->
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: NIRCam</li>
+                          <li>Mode: Imaging</li>
+                          <li>Calibration Pipeline Used: jwst v1.7.2</li>
+                          <li>CRDS Context pmap: 0989</li>
+                          <li>Target: NIRCam pointings 1, 2, 3, 6 (in parallel with prime MIRI Imaging)</li>
+                          <li>Filters: SW F115W, F150W, F200W; LW F277W, F356W, F410M, F444W</li>
+                          <li>Readout: MEDIUM8</li>
+                          <li>Observation specification: 5 or 9 groups, 1 integration</li>
+                          <li>Dithers: 3 point dither in each filter, defined by the MIRI primary observations</li>
+                        </ul>
+                       
+                      <!--  Mosaics  -->  
+                      <h3 id=nircam-mosaics>Mosaics</h3>
+                      <ul>
+                        <li>Fully reduced mosaics for the 4 pointings and all 7 filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/" target="_blank">here</a> or in the table below.</li>
+                        <li>The mosaics are on pixel scales of 0.03"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr).</li>
+                        <li>Each mosaic is a gzipped FITS file with 12 extensions, all described in the <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/imaging/README.txt" target="_blank">README</a>. The gzipped files are each ~1.4-1.6 GB and unzip to ~2.3-3.2 GB.
+                        <li>We also provide pixel-aligned images in all available HST filters for each pointing. The HST images are gzipped FITS files with 6 extensions. They are ~1.1 GB and unzip to ~1.3-1.9 GB.</li>
+                        <li>The first row of the table below provides a link to a gzipped tarball (tar.gz) containing mosaics for all filters of the pointing. <b>These tarballs are ~15-17 GB</b>.</li>
+                        <li>NIRCam2*: There are two sets of observations for F200W and F444W in this pointing, obtained 1 week apart. The second set ("b") was affected by significant persistence. We provide mosaics of each observation separately (i.e., "F200W" and F200Wb") as well as combined together ("All").</li>
+                      </ul>
+
+                      <div class="table-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style='text-align:center;'>NIRCam1</th>
+                              <th style='text-align:center;'>NIRCam2*</th>
+                              <th style='text-align:center;'>NIRCam3</th>
+                              <th style='text-align:center;'>NIRCam6</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6.tar.gz">All filters (zipped)</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f115w_v0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f115w_v0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f115w_v0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f115w_v0.5_i2d.fits.gz">F115W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f150w_v0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f150w_v0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f150w_v0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f150w_v0.5_i2d.fits.gz">F150W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f200w_v0.5_i2d.fits.gz">F200W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f200w_v0.5_i2d.fits.gz">F200W</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f200w_v0.5_i2d.fits.gz">F200Wb</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f200w_v0.5_i2d.fits.gz">All</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f200w_v0.5_i2d.fits.gz">F200W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f200w_v0.5_i2d.fits.gz">F200W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f277w_v0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f277w_v0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f277w_v0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f277w_v0.5_i2d.fits.gz">F277W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f356w_v0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f356w_v0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f356w_v0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f356w_v0.5_i2d.fits.gz">F356W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f410m_v0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f410m_v0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f410m_v0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f410m_v0.5_i2d.fits.gz">F410M</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f444w_v0.5_i2d.fits.gz">F444W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f444w_v0.5_i2d.fits.gz">F444W</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f444w_v0.5_i2d.fits.gz">F444Wb</a>,
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f444w_v0.5_i2d.fits.gz">All</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f444w_v0.5_i2d.fits.gz">F444W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f444w_v0.5_i2d.fits.gz">F444W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f606w_v1.9_nircam1_drz.fits">ACS F606W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hst/egs_all_acs_f606w_v1.9_nircam2_drz.fits">ACS F606W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f606w_v1.9_nircam3_drz.fits">ACS F606W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f606w_v1.9_nircam6_drz.fits">ACS F606W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f814w_v1.9_nircam1_drz.fits">ACS F814W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hst/egs_all_acs_f814w_v1.9_nircam2_drz.fits">ACS F814W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f814w_v1.9_nircam3_drz.fits">ACS F814W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f814w_v1.9_nircam6_drz.fits">ACS F814W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f105w_v1.9_nircam3_drz.fits">WFC3 F105W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f105w_v1.9_nircam6_drz.fits">WFC3 F105W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f125w_v1.9_nircam1_drz.fits">WFC3 F125W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hst/egs_all_acs_f125w_v1.9_nircam2_drz.fits">WFC3 F125W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f125w_v1.9_nircam3_drz.fits">WFC3 F125W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f125w_v1.9_nircam6_drz.fits">WFC3 F125W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f140w_v1.9_nircam1_drz.fits">WFC3 F140W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hst/egs_all_acs_f140w_v1.9_nircam2_drz.fits">WFC3 F140W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f140w_v1.9_nircam3_drz.fits">WFC3 F140W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f140w_v1.9_nircam6_drz.fits">WFC3 F140W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f160w_v1.9_nircam1_drz.fits">WFC3 F160W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hst/egs_all_acs_f160w_v1.9_nircam2_drz.fits">WFC3 F160W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hst/egs_all_acs_f160w_v1.9_nircam3_drz.fits">WFC3 F160W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hst/egs_all_acs_f160w_v1.9_nircam6_drz.fits">WFC3 F160W</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+
+                      <!-- Data Reduction -->
+                      <h3 id="nircam-reduction">Data reduction</h3>
+                      <p>We have reducded images throught version 1.7.2 of the JWST Calibration Pipeline with custom Python scripts developed to handle additional corrections such as "snowballs", "wisps", <i>1/f</i> noise, and background subtraction. Please see Bagley et al. (in prep) for details on our reduction. Our full set of scripts and Pipeline parameter files will be available soon, and we will share the link here!</>
+
+                  </section>
+                </article>
+
+
+                <!-- DR05 MIRI -->
+                <article class="post" id=miri-imaging>
+                  <section>
+                    <h3>Epoch 1 MIRI Imaging and Reduction</h3>
+
+                      <p>To access the full MIRI data release directly, visit <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI" target="_blank">this link</a>. Alternatively, see below to access the fully reduced <a href="#miri-mosaics">mosaics in each pointing and filter</a>. Please see the associated <b><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/README.txt" target="_blank">README</a></b> describing the release.</p>
+                      <p style="margin-top:-1em;">The MIRI data reduction will be presented in detail in Yang et al. (in prep). Please cite this paper if you use the reduced images or reduction scripts for your projet.</p>
+
+                      <!-- Summary -->
+                      <h3>Summary</h3>
+                        <ul>
+                          <li>Instrument: MIRI</li>
+                          <li>Mode: Imaging</li>
+                          <li>Calibration Pipeline Used: jwst v1.7.2</li>
+                          <li>CRDS Context pmap: 0970</li>
+                          <li>Target: MIRI Pointings 1, 2, 3, 6 (as primary with parallel NIRCam imaging)</li>
+                          <li>Filters: F560W, F770W, F1000W, F1280W, F1500W, F1800W, F2100W</li>
+                          <li>Readout: SLOWR1 (F560W and F770W), FASTR1 (all other filters)</li>
+                          <li>Observation specification: Groups and integrations vary by filter and pointing</li>
+                          <li>Dithers: 3 point dither in each filter, optimized for MIRI+NIRCam coordinated parallels</li>
+                        </ul>
+
+                      <!--  Mosaics  -->
+                      <h3 id=miri-mosaics>Mosaics</h3>
+                      <ul>
+                        <li>Fully reduced mosaics for all 4 pointings and in all filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI" target="_blank">here</a> or in the table below.</li>
+                        <li>The mosaics on pixel scales of 0.09"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr).</li>
+                        <li>We have also produced custom RMS maps using <a href="https://github.com/mmechtley/astroRMS" target="_blank">astroRMS</a> to account for pixel-correlated noise. These are included as an extension in each FITS file, and we and strongly recommend using them instead of the pipeline-produced ERR map.</li>
+                      </ul>
+
+                      <div class="table-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th style='text-align:center;'>MIRI1</th>
+                              <th style='text-align:center;'>MIRI2</th>
+                              <th style='text-align:center;'>MIRI3</th>
+                              <th style='text-align:center;'>MIRI6</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3.tar.gz">All filters (zipped)</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6.tar.gz">All filters (zipped)</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f560w_v0.5_i2d.fits">F560W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f560w_v0.5_i2d.fits">F560W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f770w_v0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f770w_v0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f770w_v0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f770w_v0.5_i2d.fits">F770W</a></td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1000w_v0.5_i2d.fits">F1000W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1000w_v0.5_i2d.fits">F1000W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1280w_v0.5_i2d.fits">F1280W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1280w_v0.5_i2d.fits">F1280W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1500w_v0.5_i2d.fits">F1500W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1500w_v0.5_i2d.fits">F1500W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1800w_v0.5_i2d.fits">F1800W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1800w_v0.5_i2d.fits">F1800W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f2100w_v0.5_i2d.fits">F2100W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f2100w_v0.5_i2d.fits">F2100W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                           
+                            
+
+                      <!-- Data Reduction -->
+                      <h3 id="miri-reduction">Data reduction</h3>
+                        <p>We have reducded images throught version 1.7.2 of the JWST Calibration Pipeline with custom Python scripts developed to handle additional corrections such as outlier detection and background subtraction. Please see Yang et al. (in prep) for details on our reduction. Our pre-flight MIRI reduction of simulated images is presented in <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908..144Y/abstract" target="_blank">Yang et al. (2021)</a>.</p>
+                  </section>
+                </article>
+
+
+            <!-- End Main -->
+            </div>
+
+            <!-- Footer -->
+              <section id="footer">
+                <ul class="icons">
+                  <li><a href="https://twitter.com/ceers_jwst" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
+       <!--           <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <p class="copyright" style="color:#f2a004; margin-left: 1.5em;">&copy; CEERS. Design: <a href="http://html5up.net">HTML5 UP</a>. </p>
+              </section>
+
+        <!-- End Wrapper -->
+        </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/modals"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
