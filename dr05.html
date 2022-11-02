@@ -101,7 +101,7 @@
 
             <!-- Post Heading -->
                 <article class="post">
-                  <h2>CEERS Data Release v0.5</h2>
+                  <h2>CEERS Data Release 0.5</h2>
                   <p style="font-size:1.4em;">Please consider <b><a href="https://forms.gle/SdQnETMHdCBzcuMB9" target="_blank">subscribing to our email list</a></b> to receive updates related to released data products and alerts when future data releases are available.</p>
                   <p style="margin-top:-1em;">We are excited to announce <b>CEERS Data Release 0.5!</b> Here we provide our team's reductions of the first set of CEERS observations. We also provide documentation and the scripts and Python code we used to reduce the images. See below for more information.</p>
                   <p style="margin-top:-1em;">The CEERS observations have been split into two epochs. The first set of CEERS MIRI+NIRCam images (MIRI as the primary instrument and NIRCam in parallel) were obtained on 21 June, 2022, and involved CEERS pointings 1, 2, 3 and 6. The remaining CEERS observations (six NIRSpec MSA+NIRCam imaging and NIRCam WFSS+MIRI imaging) are scheduled for December 2022 when the field is observable with a 180&deg; position angle rotation (see <a href="obs.html">Observing Modes</a> for more info). We have also written about our Epoch 1 observations on our <a href="ceers-first-images-release.html">CEERS Blog</a>.</p>
@@ -136,8 +136,8 @@
                       <h3 id=nircam-mosaics>Mosaics</h3>
                       <ul>
                         <li>Fully reduced mosaics for the 4 pointings and all 7 filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/" target="_blank">here</a> or in the table below.</li>
-                        <li>The mosaics are on pixel scales of 0.03"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr).</li>
-                        <li>Each mosaic is a gzipped FITS file with 12 extensions, all described in the <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/imaging/README.txt" target="_blank">README</a>. The gzipped files are each ~1.4-1.6 GB and unzip to ~2.3-3.2 GB.
+                        <li>The mosaics are on pixel scales of 0.03"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr), and so the zeropoint is 28.08652 AB mag.</li>
+                        <li>Each mosaic is a gzipped FITS file with 13 extensions, all described in the <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/imaging/README.txt" target="_blank">README</a>. The gzipped files are each ~1.4-1.6 GB and unzip to ~2.3-3.2 GB.
                         <li>We also provide pixel-aligned images in all available HST filters for each pointing. The HST images are gzipped FITS files with 6 extensions. They are ~1.1 GB and unzip to ~1.3-1.9 GB.</li>
                         <li>The first row of the table below provides a link to a gzipped tarball (tar.gz) containing mosaics for all filters of the pointing. <b>These tarballs are ~15-17 GB</b>.</li>
                         <li>NIRCam2*: There are two sets of observations for F200W and F444W in this pointing, obtained 1 week apart. The second set ("b") was affected by significant persistence. We provide mosaics of each observation separately (i.e., "F200W" and F200Wb") as well as combined together ("All").</li>
@@ -161,50 +161,50 @@
                               <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6.tar.gz">All filters (zipped)</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f115w_v0.5_i2d.fits.gz">F115W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f115w_v0.5_i2d.fits.gz">F115W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f115w_v0.5_i2d.fits.gz">F115W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f115w_v0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f115w_dr0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f115w_dr0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f115w_dr0.5_i2d.fits.gz">F115W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f115w_dr0.5_i2d.fits.gz">F115W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f150w_v0.5_i2d.fits.gz">F150W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f150w_v0.5_i2d.fits.gz">F150W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f150w_v0.5_i2d.fits.gz">F150W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f150w_v0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f150w_dr0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f150w_dr0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f150w_dr0.5_i2d.fits.gz">F150W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f150w_dr0.5_i2d.fits.gz">F150W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f200w_v0.5_i2d.fits.gz">F200W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f200w_v0.5_i2d.fits.gz">F200W</a>, 
-                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f200w_v0.5_i2d.fits.gz">F200Wb</a>, 
-                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f200w_v0.5_i2d.fits.gz">All</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f200w_v0.5_i2d.fits.gz">F200W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f200w_v0.5_i2d.fits.gz">F200W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f200w_dr0.5_i2d.fits.gz">F200W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f200w_dr0.5_i2d.fits.gz">F200W</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f200w_dr0.5_i2d.fits.gz">F200Wb</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f200w_dr0.5_i2d.fits.gz">All</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f200w_dr0.5_i2d.fits.gz">F200W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f200w_dr0.5_i2d.fits.gz">F200W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f277w_v0.5_i2d.fits.gz">F277W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f277w_v0.5_i2d.fits.gz">F277W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f277w_v0.5_i2d.fits.gz">F277W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f277w_v0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f277w_dr0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f277w_dr0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f277w_dr0.5_i2d.fits.gz">F277W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f277w_dr0.5_i2d.fits.gz">F277W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f356w_v0.5_i2d.fits.gz">F356W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f356w_v0.5_i2d.fits.gz">F356W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f356w_v0.5_i2d.fits.gz">F356W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f356w_v0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f356w_dr0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f356w_dr0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f356w_dr0.5_i2d.fits.gz">F356W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f356w_dr0.5_i2d.fits.gz">F356W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f410m_v0.5_i2d.fits.gz">F410M</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f410m_v0.5_i2d.fits.gz">F410M</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f410m_v0.5_i2d.fits.gz">F410M</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f410m_v0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f410m_dr0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f410m_dr0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f410m_dr0.5_i2d.fits.gz">F410M</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f410m_dr0.5_i2d.fits.gz">F410M</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f444w_v0.5_i2d.fits.gz">F444W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f444w_v0.5_i2d.fits.gz">F444W</a>, 
-                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f444w_v0.5_i2d.fits.gz">F444Wb</a>,
-                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f444w_v0.5_i2d.fits.gz">All</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f444w_v0.5_i2d.fits.gz">F444W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f444w_v0.5_i2d.fits.gz">F444W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hlsp_ceers_jwst_nircam_nircam1_f444w_dr0.5_i2d.fits.gz">F444W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2_f444w_dr0.5_i2d.fits.gz">F444W</a>, 
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2b_f444w_dr0.5_i2d.fits.gz">F444Wb</a>,
+                                <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam2/hlsp_ceers_jwst_nircam_nircam2all_f444w_dr0.5_i2d.fits.gz">All</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam3/hlsp_ceers_jwst_nircam_nircam3_f444w_dr0.5_i2d.fits.gz">F444W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam6/hlsp_ceers_jwst_nircam_nircam6_f444w_dr0.5_i2d.fits.gz">F444W</a></td>
                             </tr>
                             <tr>
                               <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/NIRCam/nircam1/hst/egs_all_acs_f606w_v1.9_nircam1_drz.fits">ACS F606W</a></td>
@@ -281,7 +281,7 @@
                       <h3 id=miri-mosaics>Mosaics</h3>
                       <ul>
                         <li>Fully reduced mosaics for all 4 pointings and in all filters are available <a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI" target="_blank">here</a> or in the table below.</li>
-                        <li>The mosaics on pixel scales of 0.09"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr).</li>
+                        <li>The mosaics on pixel scales of 0.09"/pix and are pixel-aligned across all filters. The science images are in units of MegaJansky per steradian (MJy/sr), and so the zeropoint is 25.70091 AB mag.</li>
                         <li>We have also produced custom RMS maps using <a href="https://github.com/mmechtley/astroRMS" target="_blank">astroRMS</a> to account for pixel-correlated noise. These are included as an extension in each FITS file, and we and strongly recommend using them instead of the pipeline-produced ERR map.</li>
                       </ul>
 
@@ -305,42 +305,42 @@
                             <tr>
                               <td style='text-align:center'>--</td>
                               <td style='text-align:center'>--</td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f560w_v0.5_i2d.fits">F560W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f560w_v0.5_i2d.fits">F560W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f560w_dr0.5_i2d.fits">F560W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f560w_dr0.5_i2d.fits">F560W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f770w_v0.5_i2d.fits">F770W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f770w_v0.5_i2d.fits">F770W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f770w_v0.5_i2d.fits">F770W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f770w_v0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f770w_dr0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f770w_dr0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri3/hlsp_ceers_jwst_miri_miri3_f770w_dr0.5_i2d.fits">F770W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri6/hlsp_ceers_jwst_miri_miri6_f770w_dr0.5_i2d.fits">F770W</a></td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1000w_v0.5_i2d.fits">F1000W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1000w_v0.5_i2d.fits">F1000W</a></td>
-                              <td style='text-align:center'>--</td>
-                              <td style='text-align:center'>--</td>
-                            </tr>
-                            <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1280w_v0.5_i2d.fits">F1280W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1280w_v0.5_i2d.fits">F1280W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1000w_dr0.5_i2d.fits">F1000W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1000w_dr0.5_i2d.fits">F1000W</a></td>
                               <td style='text-align:center'>--</td>
                               <td style='text-align:center'>--</td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1500w_v0.5_i2d.fits">F1500W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1500w_v0.5_i2d.fits">F1500W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1280w_dr0.5_i2d.fits">F1280W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1280w_dr0.5_i2d.fits">F1280W</a></td>
                               <td style='text-align:center'>--</td>
                               <td style='text-align:center'>--</td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1800w_v0.5_i2d.fits">F1800W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1800w_v0.5_i2d.fits">F1800W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1500w_dr0.5_i2d.fits">F1500W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1500w_dr0.5_i2d.fits">F1500W</a></td>
                               <td style='text-align:center'>--</td>
                               <td style='text-align:center'>--</td>
                             </tr>
                             <tr>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f2100w_v0.5_i2d.fits">F2100W</a></td>
-                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f2100w_v0.5_i2d.fits">F2100W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f1800w_dr0.5_i2d.fits">F1800W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f1800w_dr0.5_i2d.fits">F1800W</a></td>
+                              <td style='text-align:center'>--</td>
+                              <td style='text-align:center'>--</td>
+                            </tr>
+                            <tr>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri1/hlsp_ceers_jwst_miri_miri1_f2100w_dr0.5_i2d.fits">F2100W</a></td>
+                              <td style='text-align:center'><a href="https://web.corral.tacc.utexas.edu/ceersdata/DR05/MIRI/miri2/hlsp_ceers_jwst_miri_miri2_f2100w_dr0.5_i2d.fits">F2100W</a></td>
                               <td style='text-align:center'>--</td>
                               <td style='text-align:center'>--</td>
                             </tr>
