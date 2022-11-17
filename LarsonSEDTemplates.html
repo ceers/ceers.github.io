@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Larson Bluer SED Templates</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/mirror3.ico">
+  </head>
+  <body class="single is-preload">
+
+      <!-- Wrapper -->
+        <div id="wrapper">
+
+          <!-- Header -->
+            <header id="header">
+              <h1><a href="index.html" style="color: #f2a004;">CEERS</a></h1>
+              <nav class="links">
+                <ul>
+                  <li><a href="overview.html">Overview</a></li>
+                  <li><a href="releases.html">Data Releases</a></li>
+                  <li><a href="papers.html">Papers</a></li>
+                  <li><a href="goals.html">Project Goals</a></li>
+                  <li><a href="obs.html">Obs Modes</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="updates.html">CEERS Blog</a></li>
+                </ul>
+              </nav>
+              <nav class="main">
+                <ul>
+                  <li class="menu">
+                    <a class="fa-bars" href="#menu">Menu</a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+
+          <!-- Menu -->
+            <section id="menu">
+
+              <!-- Links -->
+                <section>
+                  <ul class="links">
+                    <li>
+                      <a href="overview.html">
+                        <h3>CEERS Overview</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="releases.html">
+                        <h3>Data Releases</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="papers.html">
+                        <h3>CEERS Papers</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="goals.html">
+                        <h3>Project Goals</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="obs.html">
+                        <h3>Planned Observing Modes</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="team.html">
+                        <h3>CEERS Team Members</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="updates.html">
+                        <h3>CEERS Blog</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+
+              <!-- Actions -->
+                <section>
+                  <ul class="actions stacked">
+                    <li><a href="https://wikis.utexas.edu/display/ceers/CEERS+Wiki+Landing+Page">Team Login</a></li>
+                  </ul>
+                </section>
+
+            <!-- End Menu -->
+            </section>
+
+            <!-- Main -->
+            <div id="main">
+
+            <!-- Post Heading -->
+                <article class="post">
+                  <h2 style='font-size:1.8em'>Bluer SED Templates</br>to Use with EAZY</h2>
+                  <p> This page details the public release of the SED Templates from Larson et al 2022. A compressed file which contains all of the new templates, parameter files, and a ReadMe which can be downloaded here: </p>
+                     
+                     
+            	  <p style="margin-top:-1em;"><a href="https://web.corral.tacc.utexas.edu/ceersdata/ancillary_data/LarsonSEDTemplates/NewTemplates.tar.xz" class="button large" style="background-color:#f2a004">Link to download compressed file containing the set of SED templates</a></p>
+                  
+                  
+                  
+                </article>
+
+              <!-- Larson SED Templates -->
+                <article class="post" id=nircam-imaging>
+                  <section>
+                      
+                    <h2 style='font-size:1.8em'>Motivation</h2>
+                      <p>We find that galaxies at z=6-8, are bluer than the "tweak FSPS" templates included in the EAZY SED fitting software (<a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...686.1503B/abstract" target="_blank"> Brammer et al. 2008 </a>). We expect this to be true of z > 8 galaxies as well; due to expected young stellar populations at such early times in cosmic history, a decrease in metallicity at higher redshifts, and active star formation episodes these high-redshift galaxies likely have increasingly bluer colors. It is imperative that we use appropriate models in our SED fits to ensure the accuracy of our photometric redshifts. Larson et al 2022 find that the simulated galaxies from the <a href="https://ceers.github.io/sdr3.html#catalogs"> CEERS Simulated Data Release V3 </a> catalog are also bluer at these higher redshifts than the traditional templates. Larson et al. 2022 describes these templates and how they improve upon the ability to recover accurate redshifts for the simulated galaxies. Please reference that work if using these templates and contact the author if you have any questions. </p>
+                      
+                      <p> A few initial notes: </p>
+                      
+                        <ul>
+                      		<li>These templates are all in a format that EAZY can read – wavelength is in Angstroms, and Flux is in Flambda </li>
+                      		<li>These were made to be used with the 'old' version of EAZY (i.e, not EAZY-py), which can be downloaded at Github here: <a href="https://github.com/gbrammer/eazy-photoz" target="_blank"> github.com/gbrammer/eazy-photoz </a> </li>
+                      		<li>Previously, <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928...52F/abstract" target="_blank"> Finkelstein et al 2022a </a> had added a template from <a href="https://ui.adsabs.harvard.edu/abs/2010ApJ...719.1168E/abstract" target="_blank"> Erb et al. 2010  </a> (with and without Ly&alpha;), which is bluer than the Tweak FSPS models and which covered ~%60 of the color space of their z=6-8 galaxies. We do not include these two templates, but they are shown them in the plots below for completeness and to illustrate that we needed even bluer templates still. </li>
+                      		<li>We use version v2.2.1 of BPASS which can be found online here: <a href="https://bpass.auckland.ac.nz/" target="_blank"> bpass.auckland.ac.nz </a> </li>
+                      		<li>We model the emission line spectra using Cloudy v17.0 described in <a href="https://ui.adsabs.harvard.edu/abs/2017RMxAA..53..385F/abstract" target="_blank"> Ferland et al 2017 </a> </li>
+                      	</ul>
+                      
+                      <!-- figure -->
+                      
+                    <figure>
+                      <img class="image modalimg" id="modalobs" src="Images/AllTemplates.png" alt="" title="All SED Templates" style="margin-left:auto; margin-right:auto; width:70%; margin-bottom:1em; padding-bottom:1em;">
+                      <figcaption style="text-align:left; padding-top:0; margin-top:-1.5em;"> Above is a plot showing the rest-frame ultraviolet (UV) region of our SED template set, which have all been redshifted to z=10. The red and orange lines show the latest standard EAZY template set (tweak_fsps_QSF_v12_v3) which is included with the software. The purple lines show the BPASS models as described below (Set 1), which are very blue and do not include emission lines. The blue lines show the BPASS + Cloudy templates with high nebular-line equivalent widths (EWs), as described below (Set 4). All of the templates are normalized to their flux density at 2.301μm (between the F200W and F277W filters on NIRCAM). We also include the template from <a href="https://ui.adsabs.harvard.edu/abs/2010ApJ...719.1168E/abstract" target="_blank"> Erb et al. 2010  </a> used by <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928...52F/abstract" target="_blank"> Finkelstein et al 2022a </a> which includes a high-EW Ly&alpha; emisison line. This template is not included in our published set as the new BPASS and Cloudy templates satisfy the same color range (see next Figure) and our redshift fits were not improved by its inclusion (Larson et al 2022).</figcaption>
+                      <div id="myModal" class="modal">
+                        <div class="container">
+                          <div class="close">&times;</div>
+                          <img class="modal-content" src="Images/AllTemplates.png" id="AllTemplates">
+                        </div>
+                     </div>
+                    </figure>
+                    <p></p>
+  
+                      <figure>
+                      <img class="image modalimg" id="modalobs" src="Images/AllTemplateColors.png" alt="" title="All Template Colors" style="margin-left:auto; margin-right:auto; width:70%; margin-bottom:1em; padding-bottom:1em;">
+                      <figcaption style="text-align:left; padding-top:0; margin-top:-1.5em;"> In the plot above, the histogram shows the distribution of F200W − F277W colors for the z > 8 galaxies from the SAM catalog (<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.5416Y/abstract" target="_blank"> Yung et al. 2022 </a>). The solid vertical lines show the rest-UV color of the SED templates, using the color calculated by integrating the templates through the JWST/NIRCam F200W and F277W filters after placing them at z=10. The bluest EAZY FSPS template only reaches a rest-UV color of −0.1, while the majority of the comparison high-redshift sample have bluer (more negative) colors. <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928...52F/abstract" target="_blank"> Finkelstein et al 2022a </a> added a bluer template from <a href="https://ui.adsabs.harvard.edu/abs/2010ApJ...719.1168E/abstract" target="_blank"> Erb et al. 2010  </a> (green), but it is still redder than the majority of our simulated high-redshift galaxies. We greated BPASS (purple) and BPASS + Cloudy emission line (blue) templates and note that the BPASS + Cloudy templates are redder in color than the BPASS only models due to their nebular continuum emission. This new full template set can reproduce the colors of all the high-redshift galaxies in our simulated sample.</figcaption>
+                      <div id="myModal" class="modal">
+                        <div class="container">
+                          <div class="close">&times;</div>
+                          <img class="modal-content" src="Images/AllTemplateColors.png" id="AllTemplateColors">
+                        </div>
+                     </div>
+                    </figure>
+                    <p></p>                    
+                      
+                      
+                      
+                      
+                    <h2 style='font-size:1.8em'>Description of Templates</h2>
+	                  <h3 style='font-size:1.2em'>Set 1: BPASS Only</h3>
+                      	<p>Template Filenames: </p>
+                      	
+                      	<ul>
+                      		<li>binc100z001age6.dat </li>
+                      		<li>binc100z001age65.dat </li>
+                      		<li>binc100z001age6.dat </li>
+                      	</ul>
+                      	
+                      	<p>These are BPASS models that have: </p>
+                      	<ul>
+                      		<li> NO emission lines added </li>
+                      		<li> Binary stars included </li>
+                      		<li> Chabrier IMF mass limit of 100 M<sub>☉</sub> </li>
+                      		<li> Metallicity Z=0.001 (5% Z<sub>☉</sub>) </li>
+                      		<li> Log stellar age of 6, 6.5, and 7 </li>
+                      	</ul>
+                      
+                      
+                      <h3 style='font-size:1.2em'>Set 2: BPASS + Cloudy -- Full Ly&alpha;</h3>
+                      	<p>Template Filenames: </p>
+                      	
+                      	<ul>
+                      		<li>binc100z001age6_cloudy_Lya.dat </li>
+                      		<li>binc100z001age65_cloudy_Lya.dat </li>
+                      		<li>binc100z001age6_cloudy_Lya.dat </li>
+                      	</ul>
+                      	
+                      	<p>These are the BPASS models from Set 1 that have Cloudy emission lines added with the following parameters: </p>
+                      	<ul>
+                      		<li> Ionization parameter log U = -2 </li>
+                      		<li> Gas-phase metallicity = 0.05 Z<sub>☉</sub> (i.e., fixed to stellar Z) </li>
+                      		<li> Hydrogen density of the gas cloud = 300 cm<sup>−3</sup> </li>
+                      		<li> Spherical geometry </li>
+                      		<li> "Covering factor" of the gas around the stars is 100% </li>
+                      	</ul>
+                      <p>NOTE: Nebular continuum is included with Cloudy, so these models tend to be redder than the BPASS ones alone due to this effect.</p>
+                      
+                      <h3 style='font-size:1.2em'>Set 3: BPASS + Cloudy -- Reduced Ly&alpha;</h3>
+                      	<p>Template Filenames: </p>
+                      	
+                      	<ul>
+                      		<li>binc100z001age6_cloudy_LyaReduced.dat </li>
+                      		<li>binc100z001age65_cloudy_LyaReduced.dat </li>
+                      		<li>binc100z001age6_cloudy_LyaReduced.dat </li>
+                      	</ul>
+                      	
+                      	<p>These are the BPASS models from Set 1 that have Cloudy emission lines added from Set 2 with the following change: </p>
+                      	<ul>
+                      		<li> Ly&alpha; has been reduced to 1/10 of that produced by Cloudy – this is more akin to a 10% escape fraction. </li>
+                      	</ul>
+                      <p>NOTE: Useful for typical galaxies in the z~4-7 range.</p>
+ 
+                       <h3 style='font-size:1.2em'>Set 3.5: BPASS + Cloudy -- Less Reduced Ly&alpha;</h3>
+                      	<p>Template Filenames: </p>
+                      	
+                      	<ul>
+                      		<li>binc100z001age6_cloudy_LyaReducedNarrowband.dat </li>
+                      		<li>binc100z001age65_cloudy_LyaReducedNarrowband.dat </li>
+                      		<li>binc100z001age6_cloudy_LyaReducedNarrowband.dat </li>
+                      	</ul>
+                      	
+                      	<p>These are the BPASS models from Set 1 that have Cloudy emission lines added from Set 2 with the following change: </p>
+                      	<ul>
+                      		<li> Ly&alpha; has been reduced to 1/3 of that produced by Cloudy – this is more akin to a 33% escape fraction. </li>
+                      	</ul>
+                      <p>NOTE: Useful for typical galaxies in the z~4-7 range with high EW<sub>Ly&alpha;</sub> such as Narrowband-selected samples.</p>   
+                      
+                      <h3 style='font-size:1.2em'>Set 4: BPASS + Cloudy -- No Ly&alpha;</h3>
+                      	<p>Template Filenames: </p>
+                      	
+                      	<ul>
+                      		<li>binc100z001age6_cloudy.dat </li>
+                      		<li>binc100z001age65_cloudy.dat </li>
+                      		<li>binc100z001age6_cloudy.dat </li>
+                      	</ul>
+                      	
+                      	<p>These are the BPASS models from Set 1 that have Cloudy emission lines added from Set 2 with the following change: </p>
+                      	<ul>
+                      		<li> Ly&alpha; has been fully removed. </li>
+                      	</ul>
+                      <p>NOTE: Useful for typical galaxies in the Epoch of Reionization where neutral intergalactic medium (IGM) attenuates Ly&alpha; emission from galaxies.</p>                     
+                     
+                      
+                     <h2 style='font-size:1.8em'>Suggestions for Use</h2>
+                     <p>Most of you will probably want to use 6 of these SEDs total: Set 1 + Set 3 or 4. The templates with the Full Ly&alpha; line (Set 2) are likely not applicable; these are mostly for reference.  The set used for the high-redshift galaxy selection by Larson et al 2022 with the CEERS SAM catalog was Set 1 + Set 4, and those are aslo the ones included in the plots above. None of the new templates used for the tests in Larson et al 2022 included Ly&alpha;, not just due to the expected IGM attenuation but because the SAM galaxies also do not include Ly&alpha; emission. </p>
+                     
+                     <h2 style='font-size:1.8em'>Parameter Files included for EAZY</h2>
+                     <p>The parameter files for EAZY with different combinations of the old + new templates are also included in the tar file and listed below: </p>
+                        <ul>
+                      		<li>tweak_fsps_QSF_12_v3_newtemplates.param - includes tweak FSPS + Set 1 + Set 4 (useful for z>8 galaxies) </li>
+                      		<li>tweak_fsps_QSF_12_v3_newtemplates_Lya.param - includes tweak FSPS + Set 1 + Set 2 (probably do not want to use) </li>
+                      		<li>tweak_fsps_QSF_12_v3_newtemplates_LyaReduced.param - includes tweak FSPS + Set 1 + Set 3 (useful for lower redshift (z~4-7) galaxies)  </li>
+                      		<li>tweak_fsps_QSF_12_v3_newtemplates_LyaReducedNarrowband.param - includes tweak FSPS + Set 1 + Set 3.5 (useful for galaxies with high EW<sub>Ly&alpha;</sub>) </li>
+                      	</ul>
+                  </section>
+                </article>
+
+
+            <!-- End Main -->
+            </div>
+
+            <!-- Footer -->
+              <section id="footer">
+                <ul class="icons">
+                  <li><a href="https://twitter.com/ceers_jwst" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://github.com/ceers" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
+       <!--           <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li> -->
+                </ul>
+                <p class="copyright" style="color:#f2a004; margin-left: 1.5em;">&copy; CEERS. Design: <a href="http://html5up.net">HTML5 UP</a>. </p>
+              </section>
+
+        <!-- End Wrapper -->
+        </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/modals"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
