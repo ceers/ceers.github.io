@@ -102,18 +102,29 @@
               <!-- Post Heading -->
                 <article class="post">
                    <h2>CEERS Observing Modes</h2>
-                   <p style="margin-bottom:0.4em;">CEERS has obtained imaging and spectroscopy of the Extended Groth Strip (EGS) <i>HST</i> legacy field with five parallel JWST modes with three instruments:</p>
+                   <p style="margin-bottom:0.4em;">CEERS has obtained imaging and spectroscopy of the Extended Groth Strip (EGS) HST legacy field with three JWST instruments and five prime-parallel observing mode combinations. </p>
+                   <p class="tab"><a href=#layout>Survey Layout and Summary</a></p>
+                   <p style="margin-left:4em; margin-bottom:0.5em;"><a href="#layout_figures">CEERS Layout Figures</a></p>
+                   <p style="margin-left:4em; margin-bottom:1em;"><a href="#pointings">CEERS Pointing Table and Maps</a></p>
                    <p class="tab"><a href=#nircam>NIRCam</a></p>
                    <p class="tab"><a href=#nirspec>NIRSpec</a></p>
-                   <p class="tab"><a href=#miri>MIRI</a></p>
+                   <p class="tab" style="margin-bottom:1.5em;"><a href=#miri>MIRI</a></p>
+                   <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx" class="button">Download CEERS APT File</a> <br>
+                      <a href="https://www.stsci.edu/jwst/phase2-public/1345.pdf" target="_blank" class="button" style="margin-top:0.5em;">Download CEERS Public PDF</a>
+                   </p> 
+                </article>
+                
+                <article class="post" id="layout">
+                  <section>
+                    <h3>Survey Layout and Summary</h3>
+                    <p>CEERS consists of 10 pointings of prime+parallel instrument combinations, obtained in three epochs in 2022-2023. The observations were highly constrained in order to maximize overlap between JWST instruments and with the existing HST imaging in the field. The pointings were schedulable in June and December (with a 180&deg; flip), and aspects of the survey were redesigned multiple times in response to changes in the observing schedule, the opportunity to follow up newly discovered exciting targets, and the need to repeat a handful of observations. As a result, the final CEERS survey layout is a bit chaotic, and so we describe it in detail here with survey layout maps and a <a href=#pointings>table of all pointings</a>.</p>
+                   <p><b>Three epochs of observations</b></p>
+                   <p style="margin-top:-2em;">At the end of commissioning, there was not enough time left in the CEERS June observing window to complete the entire survey. The first four imaging pointings (MIRI + NIRCam) were observed in June 2022. The remaining six NIRSpec MSA + NIRCam imaging and four NIRCam grism + MIRI imaging pointings were observed in December 2022. Following a short in the MSA that affected two NIRSpec PRISM observations, we obtained two additional PRISM reobservations in February 2023. You can access all CEERS observations <a href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22proposal_id%22%2C%22niceName%22%3A%22proposal_id%22%2C%22values%22%3A%5B%5D%2C%22valString%22%3A%221345%22%2C%22isDate%22%3Afalse%2C%22freeText%22%3A%221345%22%2C%22displayString%22%3A%221345%22%7D%5D%2C%22position%22%3A%22undefined%2C%20undefined%2C%20undefined%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered%22%2C%22title%22%3A%22MAST%3A%20%20Advanced%20Search%201%22%2C%22tooltip%22%3A%221345%3B%20%22%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D" target="_blank">on MAST</a>. </p>
 
-                 <hr> 
-                   <p>The CEERS observations were schedulable in June and December (with a 180&deg; flip). We obtained observations in two epochs, with four MIRI + NIRCam imaging pointings observed in June 2022, and the remaining six NIRSpec MSA + NIRCam imaging and four NIRCam grism + MIRI imaging pointings observed in December 2022. Following a short in the MSA that affected two NIRSpec PRISM observations, we obtained two additional PRISM reobservations in February 2023. You can access all CEERS observations <a href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22proposal_id%22%2C%22niceName%22%3A%22proposal_id%22%2C%22values%22%3A%5B%5D%2C%22valString%22%3A%221345%22%2C%22isDate%22%3Afalse%2C%22freeText%22%3A%221345%22%2C%22displayString%22%3A%221345%22%7D%5D%2C%22position%22%3A%22undefined%2C%20undefined%2C%20undefined%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered%22%2C%22title%22%3A%22MAST%3A%20%20Advanced%20Search%201%22%2C%22tooltip%22%3A%221345%3B%20%22%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D" target="_blank">on MAST</a>. </p>
-
-                    <p style="margin-top:-1em;">We show here the complete survey layout (left), separating the June observations (middle) and the December/February observations (right). We also include the DDT NIRSpec follow-up of Maisie's Galaxy led by Pablo Arrabal Haro (DDT 2750). </p>
+                    <p id="layout_figures">We show here the complete survey layout (left), separating the June observations (middle) and the December/February observations (right). We also include the DDT NIRSpec follow-up of Maisie's Galaxy led by Pablo Arrabal Haro (DDT 2750). </p>
                     <figure>
                       <img class="image modalimg" id="modalobs" src="images/twoepochmaps.png" alt="Survey layout, separated by epoch" title="Survey layout, separated by epoch" style="margin-left:auto; margin-right:auto; width:60%; margin-bottom:1em; padding-bottom:1em;">
-                      <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;">(Click image to enlarge.)</figcaption>
+                      <figcaption style="text-align:center; padding-top:0; margin-top:-1.5em;"> (Click image to enlarge.)</figcaption>
                       <div id="myModal" class="modal">
                         <div class="container">
                           <div class="close">&times;</div>
@@ -141,78 +152,131 @@
                       <span class="image center"><img src="images/ceerslayout.gif" alt="Animated GIF building CEERS survey layout pointing by pointing" title="Animated GIF building CEERS survey layout pointing by pointing" style="margin-left:auto; margin-right:auto; width:50%; margin-bottom:1em; padding-bottom:1em;"></span>
                     </figure>
 
-                    <p></p>
-                    <p>Click below to download a zipped file containing NIRCam, NIRSpec and MIRI pointing maps for each configuration. These maps are approximate, good to within ~10". (Note that these December and Full Survey pointing maps are versions from before the observations were executed. We will update these pointing maps soon.)</p>
+                    <hr>
+                    <p id="pointings"><b>CEERS Pointings</b></p>
+                    <table id="pointings">
+                      <thead style="font-size:1.1em;">
+                        <th>Pointing ID</th>
+                        <th>Primary Observation</th>
+                        <th>Parallel Observation</th>
+                        <th>Epoch of Observation</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>MIRI Imaging (6 filters, 7-21 &mu;m)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 1, June 2022</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>MIRI Imaging (6 filters, 7-21 &mu;m)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 1, June 2022</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>MIRI Imaging (2 filters, 5-7 &mu;m)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 1, June 2022</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align:middle;">5</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM)<br>NIRCam WFSS F356W (+F115W Imaging)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)<br>MIRI Imaging (4 filters, 10-18 &mu;m)</td>
+                          <td style="vertical-align:middle;">Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>MIRI Imaging (2 filters, 5-7 &mu;m)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 1, June 2022</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align:middle;">7</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM)<br>NIRCam WFSS F356W (+F115W Imaging)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)<br>MIRI Imaging (2 filters, 5-7 &mu;m)</td>
+                          <td style="vertical-align:middle;">Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align:middle;">8</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM)<br>NIRCam WFSS F356W (+F115W Imaging)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)<br>MIRI Imaging (4 filters, 10-18 &mu;m)</td>
+                          <td style="vertical-align:middle;">Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align:middle;">9</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM*)<br>NIRCam WFSS F356W (+F115W Imaging)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)<br>MIRI Imaging (2 filters, 5-7 &mu;m)</td>
+                          <td style="vertical-align:middle;">Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>NIRSpec MSA (G140M, G235M, G395W, PRISM*)</td>
+                          <td>NIRCam Imaging (7 filters, 1-5 &mu;m)</td>
+                          <td>Epoch 2, December 2022</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>NIRSpec MSA (PRISM)</td>
+                          <td>--</td>
+                          <td>Epoch 3, February 2022</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>NIRSpec MSA (PRISM)</td>
+                          <td>--</td>
+                          <td>Epoch 3, February 2022</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p style="margin-top:-1em;">* A short in the MSA affected the PRISM observations of pointings 9 and 10. These observations were repeated in Epoch 3, and the pointings were shifted to cover high-priority targets discovered in the Epoch 2 NIRCam imaging.</p>
+                    <p>Click below to download a zipped file containing NIRCam, NIRSpec and MIRI pointing maps. These maps are approximate, good to within ~10". (Note that the December and Full Survey pointing maps are versions from before the observations were executed. We will update these pointing maps soon.)</p>
                     <p><a href="images/maps/JuneMaps.zip" class="button">Download June pointing maps</a><br>
                       <a href="images/maps/DecemberMaps.zip" class="button" style="margin-top:0.5em;">Download December pointing maps</a><br>
                     <a href="images/maps/FullNIRCamMaps.zip" class="button" style="margin-top:0.5em;">Download full survey NIRCam pointing maps</a></p>
-                    <hr>
-                     <p>Click below to download the list of objects which received NIRSpec MSA slits in our original Aug 2017 APT submission.  This is just one realization of what the final configuration will be, but it gives a rough idea of the numbers of which types of sources will receive slits.</p>
-                     <p><a href="images/ceers_slits.cat" class="button">Download MSA slit catalog</a><br>
-                     <a href="images/ceers_slits.reg" class="button" style="margin-top:0.5em;">Download MSA slit region file</a>
-                     </p>
-                    <hr>
-                     <p><a href="https://www.stsci.edu/jwst/phase2-public/1345.aptx" class="button">Download CEERS APT File</a> <br>
-                     <a href="https://www.stsci.edu/jwst/phase2-public/1345.pdf" target="_blank" class="button" style="margin-top:0.5em;">Download CEERS Public PDF</a>
-                     </p> 
                 </article>
                 
-                <article class="post">
-                    <section id="nircam">
+                <article class="post" id="nircam">
+                    <section>
                       <h3>NIRCam</h3>
-                        <!-- Modal observing plan -->
- <!--                       <img class="image right modalimg" id="modalobs" src="images/obs.png" alt="Survey layout and planned EGS observations" title="Planned EGS Observations">
-                          <div id="myModal" class="modal">
-                          <div class="container">
-                          <span class="close">&times;</span>
-                          <img class="modal-content" src="images/obs.png" id="img01">
-                          </div>  
-                        </div> -->
-                        <p>The NIRCam observing strategy is set by the primary science goal of detecting a large sample of z~9-13 galaxies. CEERS is based on 10 NIRCam pointings covering ~100 square arcmin of the EGS field. CEERS will obtain:</p>
-                     <ul style="margin-top:-2em;">
-                        <li>NIRCam imaging in 10 pointings, pairing the SW and LW filters. The following represent the planned 5&sigma; point source depths per filter.</li>
-                    <table style="margin-top:1em; margin-bottom:0;">
-                      <thead style="font-size:1.1em;">
-                        <th>SW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
-                        <th>LW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
-                      </thead>
-                      <tbody>
-                        <tr><td>F115W</td><td>29.15</td>
-                            <td>F277W</td><td>29.15</td></tr>
-                        <tr><td>F150W</td><td>28.9</td>
-                            <td>F356W</td><td>28.95</td></tr>
-                        <tr><td>F200W</td><td>28.97</td>
-                            <td>F444W</td><td>28.6</td></tr>
-                        <tr><td></td><td></td>
-                            <td>F410M*</td><td>28.4</td></tr>
-                      </tbody>
-                    </table>
-                      <p>* F410M will be obtained for the 6 NIRCam pointings that do not use the Slitless Spectroscopy mode.</p>
-                      </ul>
+                        <p><b>Imaging in 10 pointings</b></p>
+                        <p style="margin-top:-2em;">The NIRCam imaging observing strategy is set by the primary science goal of detecting a large sample of z~9-13 galaxies. F115W + F150W + F200W probe the Ly&#945; break and are paired with the LW filters F277W, F356W, F410M and F444W. We used exposure times of ~3000 s in all filters, with approximately double the exposure time in F115W to increase the dynamic range of detectable detectable Ly&#945; breaks. F410W also acts as a narrow-band filter for [OIII] emission at 6.7 &lt; z &lt; 7.6.</p>
 
-                        <ul style="margin-top:-1em;">
-                          <li>F115W + F150W + F200W will probe the 
-                           Ly&#945; break and will be paired with the LWF 
-                           filters F277W, F356W and F444W at no cost.</li>
-                          <li>Additional F115W imaging will increase the 
-                           dynamic range of the detectable Ly&#945; breaks.</li>
-                          <li>In 4 fields, these additional F115W exposures 
-                           are paired with the grism (R~1500), allowing the 
-                           measurement of spectroscopic redshifts of z&gt;4 
-                           star-forming galaxies and the calibration of NIRSpec 
-                           slit losses</li>
-                          <li>In the remaining 6 fields, the additional 
-                           exposures will be paired with F410W, which acts as 
-                           a narrow-band filter for [OIII] emission at 
-                           6.7 &lt; z &lt; 7.6</li>
-                        </ul>
+                        <p style="margin-top:-1em;">The following represent the average 5&sigma; point source depths per filter in all 10 pointings:
+                            <table style="margin-top:-2em; margin-bottom:0;">
+                              <thead style="font-size:1.1em;">
+                                <th>SW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
+                                <th>LW Filter</th><th>Depth<br>(5&sigma; pt. source)</th>
+                              </thead>
+                              <tbody>
+                                <tr><td>F115W</td><td>29.20</td>
+                                    <td>F277W</td><td>29.15</td></tr>
+                                <tr><td>F150W</td><td>29.00</td>
+                                    <td>F356W</td><td>29.15</td></tr>
+                                <tr><td>F200W</td><td>29.16</td>
+                                    <td>F410M</td><td>28.32</td></tr>
+                                <tr><td></td><td></td>
+                                    <td>F444W</td><td>28.54</td></tr>
+                              </tbody>
+                            </table>
+                        </p>
+
+                        <p><b>Wide Field Slitless Spectroscopy in 4 pointings</b><p> 
+                        <p style="margin-top:-2em;">The WFSS observations use the F356W filter (~3.1-4 &mu;m) with exposure times of ~3000s split between the row (R) and column (C) NIRCam grisms (R~1500). The CEERS grism observations probe H&alpha; at 3.7 &gt; z &gt; 5.1, [OIII] at 5.3 &gt; z &gt; 7.0, and [OII] at 7.3 &gt; z &gt; 9.7. They also provide spatial maps of emission in a variety of extended targets. The pointings partially overlap 3 CEERS NIRSpec pointings, providing an opportunity to calibrate NIRSpec slit losses.</p>
                     </section>
                   </article>
                 
                   <article class="post">
                     <section id="nirspec">
                       <h3>NIRSpec</h3>
-                        <p>The NIRSpec MSA observations address diverse goals: measuring redshifts of high-priority distant galaxies, characterizing ISM and AGN evolution, and testing <i>JWST</i> observing strategies for Cycle 2. CEERS will observe 6 pointings with R~1000 and 4 pointings with R~100. The NIRSpec strategy includes:</p>
+                        <p>The NIRSpec MSA observations address diverse goals: measuring redshifts of high-priority distant galaxies, characterizing ISM and AGN evolution, and testing <i>JWST</i> observing strategies for Cycle 2. CEERS observed 6 pointings with R~1000 and 4 pointings with R~100. The NIRSpec strategy includes:</p>
                         <ul style="margin-top:-1em;">
                           <li>Orientation and tiling to maximize overlap with NIRCam and <i>HST;</i></li>
                           <li>R=1000 at 3 grating settings efficiently characterizes emission-line strengths;</li>
@@ -220,6 +284,11 @@
                           <li>Prism observations for efficient measurement of broad continuum features;</li>
                           <li>Testing the impact of object centering through small dithers.</li>
                         </ul>
+                    <hr>
+                     <p>Click below to download the list of objects which received NIRSpec MSA slits in our original Aug 2017 APT submission.  This is just one realization of what the final configuration will be, but it gives a rough idea of the numbers of which types of sources will receive slits.</p>
+                     <p><a href="images/ceers_slits.cat" class="button">Download MSA slit catalog</a><br>
+                     <a href="images/ceers_slits.reg" class="button" style="margin-top:0.5em;">Download MSA slit region file</a>
+                     </p>
                     </section>
                   </article>
 
